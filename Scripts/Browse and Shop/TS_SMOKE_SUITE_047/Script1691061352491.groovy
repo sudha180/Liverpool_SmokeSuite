@@ -17,11 +17,33 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('HomePage/Buscar1'), FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('')
 
-WebUI.setText(findTestObject('HomePage/Buscar1'), searchTerm)
+WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.delay(5)
+WebUI.mouseOver(findTestObject('HomePage/Departamentos'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('HomePage/Seach_TextBox_hp'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('HomePage/L1_Category1_HP'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('CLPPage/SubCategory2_leftmenu_CLP'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('CLPPage/SubCategory3_leftmenu_CLP'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementClickable(findTestObject('CLPPage/breadCrumb_clp'))
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/CategoríasTitleFacet_PLP'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/DescontousTitleFacet_PLP'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/TamanoTitleFacet_PLP'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/MarcasTitleFacet_PLP'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/VendidoTitleFacet_PLP'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/PreciosTitleFacet_PLP'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/ColorTitleFacet_PLP'), 0)
+
+WebUI.closeBrowser()
 

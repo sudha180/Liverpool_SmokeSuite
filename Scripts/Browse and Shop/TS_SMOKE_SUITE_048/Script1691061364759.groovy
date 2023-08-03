@@ -17,11 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('HomePage/Buscar1'), FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('')
 
-WebUI.setText(findTestObject('HomePage/Buscar1'), searchTerm)
+WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.delay(5)
+WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 80282837], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('HomePage/Seach_TextBox_hp'), Keys.chord(Keys.ENTER))
+'verify price range\r\n'
+WebUI.verifyElementClickable(findTestObject('PDPPage/minus(-)(priceRange)_PDP'))
+
+WebUI.closeBrowser()
 

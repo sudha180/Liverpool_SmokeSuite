@@ -25,9 +25,7 @@ WebUI.mouseOver(findTestObject('HomePage/Departamentos'), FailureHandling.STOP_O
 
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('HomePage/L1_Category1_HP'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('HomePage/L1_Category1_HP'), FailureHandling.STOP_ON_FAILURE)
-
 WebUI.verifyElementClickable(findTestObject('CLPPage/breadCrumb_clp'))
+
+WebUI.closeBrowser()
 
