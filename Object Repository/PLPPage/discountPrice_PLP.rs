@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BuyButton_Cart</name>
+   <name>discountPrice_PLP</name>
    <tag></tag>
-   <elementGuidId>d2b04703-b479-4dcf-933e-263b619ce562</elementGuidId>
+   <elementGuidId>28640d7e-413b-43fb-a63b-3d73cccd05a8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='t-myBag__toBuy']</value>
+         <value>//p[@class='a-product__paragraphDiscountPrice m-0 d-inline ']</value>
       </entry>
       <entry>
          <key>BASIC</key>

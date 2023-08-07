@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@class='a-plp-color']//li[1]//div</value>
+         <value>//ul[@class='a-plp-color']//li[1]//div//a</value>
       </entry>
       <entry>
          <key>BASIC</key>

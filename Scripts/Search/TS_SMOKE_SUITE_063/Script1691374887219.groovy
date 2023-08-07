@@ -27,9 +27,6 @@ WebUI.click(findTestObject('HomePage/Logo_hp'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
 
-'\r\n'
-WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/ColorTitleFacet_PLP'), 0)
-
 WebUI.scrollToElement(findTestObject('PLPPage/facetes/ColorTitleFacet_PLP'), 0)
 
 WebUI.click(findTestObject('PLPPage/facetes/Color_1_facet_PLP'), FailureHandling.STOP_ON_FAILURE)

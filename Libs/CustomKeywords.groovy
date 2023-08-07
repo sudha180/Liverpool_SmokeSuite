@@ -9,75 +9,75 @@ import java.lang.String
 
 
 
-def static "com.katalon.sudha.myKeywords.generateRandomEmail"() {
-    (new com.katalon.sudha.myKeywords()).generateRandomEmail()
+def static "a.myKeywords.generateRandomEmail"() {
+    (new a.myKeywords()).generateRandomEmail()
 }
 
 
-def static "com.katalon.sudha.myKeywords.refreshBrowser"() {
-    (new com.katalon.sudha.myKeywords()).refreshBrowser()
+def static "a.myKeywords.refreshBrowser"() {
+    (new a.myKeywords()).refreshBrowser()
 }
 
 
-def static "com.katalon.sudha.myKeywords.clickElement"(
+def static "a.myKeywords.clickElement"(
     	TestObject to	) {
-    (new com.katalon.sudha.myKeywords()).clickElement(
+    (new a.myKeywords()).clickElement(
         	to)
 }
 
 
-def static "com.katalon.sudha.myKeywords.clickElementWithoutScroll"(
+def static "a.myKeywords.clickElementWithoutScroll"(
     	TestObject to	) {
-    (new com.katalon.sudha.myKeywords()).clickElementWithoutScroll(
+    (new a.myKeywords()).clickElementWithoutScroll(
         	to)
 }
 
 
-def static "com.katalon.sudha.myKeywords.getHtmlTableRows"(
+def static "a.myKeywords.getHtmlTableRows"(
     	TestObject table	
      , 	String outerTagName	) {
-    (new com.katalon.sudha.myKeywords()).getHtmlTableRows(
+    (new a.myKeywords()).getHtmlTableRows(
         	table
          , 	outerTagName)
 }
 
 
-def static "com.katalon.sudha.myKeywords.scrollWindow"() {
-    (new com.katalon.sudha.myKeywords()).scrollWindow()
+def static "a.myKeywords.scrollWindow"() {
+    (new a.myKeywords()).scrollWindow()
 }
 
 
-def static "com.katalon.sudha.myKeywords.scrollToTop"() {
-    (new com.katalon.sudha.myKeywords()).scrollToTop()
+def static "a.myKeywords.scrollToTop"() {
+    (new a.myKeywords()).scrollToTop()
 }
 
 
-def static "com.katalon.sudha.myKeywords.highlightElement1"() {
-    (new com.katalon.sudha.myKeywords()).highlightElement1()
+def static "a.myKeywords.highlightElement1"() {
+    (new a.myKeywords()).highlightElement1()
 }
 
 
-def static "com.katalon.sudha.myKeywords.highlightElement"(
+def static "a.myKeywords.highlightElement"(
     	TestObject objectto	) {
-    (new com.katalon.sudha.myKeywords()).highlightElement(
+    (new a.myKeywords()).highlightElement(
         	objectto)
 }
 
 
-def static "com.katalon.sudha.myKeywords.verifyElementPresentKeyword"(
+def static "a.myKeywords.verifyElementPresentKeyword"(
     	TestObject to	) {
-    (new com.katalon.sudha.myKeywords()).verifyElementPresentKeyword(
+    (new a.myKeywords()).verifyElementPresentKeyword(
         	to)
 }
 
 
-def static "com.katalon.sudha.myKeywords.randomString"() {
-    (new com.katalon.sudha.myKeywords()).randomString()
+def static "a.myKeywords.randomString"() {
+    (new a.myKeywords()).randomString()
 }
 
 
-def static "com.katalon.sudha.myKeywords.removeDollar"(
+def static "a.myKeywords.removeDollar"(
     	String withDollarprice	) {
-    (new com.katalon.sudha.myKeywords()).removeDollar(
+    (new a.myKeywords()).removeDollar(
         	withDollarprice)
 }

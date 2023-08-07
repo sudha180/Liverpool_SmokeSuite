@@ -16,30 +16,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
 
-WebUI.openBrowser('')
+WebUI.click(findTestObject('HomePage/Iniciar sesion'))
 
-WebUI.navigateToUrl(GlobalVariable.url)
+WebUI.click(findTestObject('HomePage/EnterUsername_LP'))
 
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
+a = CustomKeywords.'a.GenerateRandomEmail.generateRandomEmail'()
 
-WebUI.click(findTestObject('HomePage/Logo_hp'))
+WebUI.setText(findTestObject('HomePage/EnterUsername_LP'), GlobalVariable.username)
 
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), 0)
+WebUI.click(findTestObject('HomePage/EnterPassword_LP'))
 
-boolean a = WebUI.getText(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('HomePage/EnterPassword_LP'), GlobalVariable.password)
 
-boolean b = WebUI.getText(findTestObject('PLPPage/facetes/selectedfacet1_PLP'))
-
-if (a == b) {
-    System.out.println('facet selected')
-} else {
-    KeywordUtil.markFailed('failed pagenation clicked page 2')
-}
-WebUI.closeBrowser()
+WebUI.click(findTestObject('HomePage/inciar'))
 

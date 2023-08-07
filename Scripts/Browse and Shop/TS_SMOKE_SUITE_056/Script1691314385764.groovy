@@ -21,6 +21,9 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
+a = CustomKeywords.'a.GenerateRandomEmail.generateRandomEmail'()
+System.out.println(a)
+
 WebUI.mouseOver(findTestObject('HomePage/Departamentos'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'), FailureHandling.STOP_ON_FAILURE)

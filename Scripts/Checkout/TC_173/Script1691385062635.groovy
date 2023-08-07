@@ -16,30 +16,37 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
+WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('HomePage/Logo_hp'))
+WebUI.click(findTestObject('HomePage/Iniciar sesion'))
 
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), 0)
+WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLProduct], 
+    FailureHandling.STOP_ON_FAILURE)
 
-boolean a = WebUI.getText(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('HomePage/bag_header_HP'))
 
-boolean b = WebUI.getText(findTestObject('PLPPage/facetes/selectedfacet1_PLP'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-if (a == b) {
-    System.out.println('facet selected')
-} else {
-    KeywordUtil.markFailed('failed pagenation clicked page 2')
-}
+WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
+
+WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'))
+
+StoreValue = CustomKeywords.'com.katalon.sudha.GenerateRandomEmail.getRandomText'('Test')
+
+WebUI.callTestCase(findTestCase('CommonMethods/addAddress_fillform_opc'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'))
+
+WebUI.verifyElementPresent(findTestObject('OPCPage/FirstAddressDefault_Checkout'), 0)
+
 WebUI.closeBrowser()
 

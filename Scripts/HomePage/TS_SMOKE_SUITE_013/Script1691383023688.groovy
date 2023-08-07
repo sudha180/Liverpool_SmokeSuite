@@ -16,30 +16,30 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('HomePage/Iniciar sesion'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('HomePage/Logo_hp'))
+randomemail = CustomKeywords.'a.GenerateRandomEmail.generateRandomEmail'()
 
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('HomePage/loginpage/create_account_hp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), 0)
+WebUI.setText(findTestObject('HomePage/loginpage/newAccountemail_LP'), randomemail)
 
-boolean a = WebUI.getText(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('HomePage/loginpage/newAccountPassword_LP'), 'ABCjklxyz@7000')
 
-WebUI.click(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('HomePage/loginpage/submit_LP'), FailureHandling.STOP_ON_FAILURE)
 
-boolean b = WebUI.getText(findTestObject('PLPPage/facetes/selectedfacet1_PLP'))
+WebUI.setText(findTestObject('HomePage/loginpage/name_LP'), 'abc')
 
-if (a == b) {
-    System.out.println('facet selected')
-} else {
-    KeywordUtil.markFailed('failed pagenation clicked page 2')
-}
-WebUI.closeBrowser()
+WebUI.setText(findTestObject('HomePage/loginpage/fatherName_LP'), 'xyz')
+
+WebUI.setText(findTestObject('HomePage/loginpage/maternalName_LP'), 'jkl')
+
+WebUI.click(findTestObject('HomePage/loginpage/hombre_radioButton_LP'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('HomePage/loginpage/createAccount_button_LP'), FailureHandling.STOP_ON_FAILURE)
 

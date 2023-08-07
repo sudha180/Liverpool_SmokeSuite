@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BuyButton_Cart</name>
+   <name>Facet_Seller_liverpool_PLP</name>
    <tag></tag>
-   <elementGuidId>d2b04703-b479-4dcf-933e-263b619ce562</elementGuidId>
+   <elementGuidId>887af507-ce33-462b-b886-2ccc3a692bf8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='t-myBag__toBuy']</value>
+         <value>//input[@id='variants.sellernames-Liverpool']/..</value>
       </entry>
       <entry>
          <key>BASIC</key>

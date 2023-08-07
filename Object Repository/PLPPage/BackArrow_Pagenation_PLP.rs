@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BuyButton_Cart</name>
+   <name>BackArrow_Pagenation_PLP</name>
    <tag></tag>
-   <elementGuidId>d2b04703-b479-4dcf-933e-263b619ce562</elementGuidId>
+   <elementGuidId>9b2aad35-12fd-418e-ba5d-3644a7214b8a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='t-myBag__toBuy']</value>
+         <value>(//li[@class='page-item'])[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

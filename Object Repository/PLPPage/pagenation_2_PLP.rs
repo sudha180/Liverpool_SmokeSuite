@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>BuyButton_Cart</name>
+   <description>pagenation button 2</description>
+   <name>pagenation_2_PLP</name>
    <tag></tag>
-   <elementGuidId>d2b04703-b479-4dcf-933e-263b619ce562</elementGuidId>
+   <elementGuidId>517786d6-8cd4-48fd-b4cd-0ccc71dfc34d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='t-myBag__toBuy']</value>
+         <value>(//ul[@class='pagination justify-content-md-center justify-content-lg-end m-pagination']//li//a[contains(text(),'2')])</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

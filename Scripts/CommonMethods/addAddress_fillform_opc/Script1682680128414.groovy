@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 String StoreValue
 
-StoreValue = CustomKeywords.'com.katalon.sudha.GenerateRandomEmail.getRandomText'('Test')
+StoreValue = CustomKeywords.'a.GenerateEmail.getRandomText'('Test')
 
 WebUI.setText(findTestObject('OPCPage/shortName_addAddress_opc (2)'), StoreValue)
 

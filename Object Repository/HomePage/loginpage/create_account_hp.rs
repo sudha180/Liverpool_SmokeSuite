@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BuyButton_Cart</name>
+   <name>create_account_hp</name>
    <tag></tag>
-   <elementGuidId>d2b04703-b479-4dcf-933e-263b619ce562</elementGuidId>
+   <elementGuidId>e4d240fb-ae77-4cb8-a1e3-419761fa7240</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='t-myBag__toBuy']</value>
+         <value>//a[@class='cccd81a90 cce50d0e0']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

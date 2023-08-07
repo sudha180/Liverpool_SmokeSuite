@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
 
 WebUI.openBrowser('')
 
@@ -35,17 +36,17 @@ productcardprice2 = WebUI.getText(findTestObject('PLPPage/product2_cardPrice_PLP
 
 productcardprice3 = WebUI.getText(findTestObject('PLPPage/product3_cardPrice_PLP'))
 
-if (productcardprice1 <= productcardprice2) {
-    println('checked1')
-} else {
-    FailureHandling.STOP_ON_FAILURE
+if ((productcardprice1 <= productcardprice2)&&(productcardprice2 <= productcardprice3)) {
+    println('in sorted order arccording to first three product')
+}  else {
+    KeywordUtil.markFailed('failed pagenation clicked page 2')
 }
-
+/*
 if (productcardprice2 <= productcardprice3) {
     println('checked2')
-} else {
-    WebUI.closeBrowser()
+}  else {
+    KeywordUtil.markFailed('failed pagenation clicked page 2')
 }
-
+*/
 WebUI.closeBrowser()
 

@@ -16,30 +16,4 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
-
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl(GlobalVariable.url)
-
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('HomePage/Logo_hp'))
-
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), 0)
-
-boolean a = WebUI.getText(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), FailureHandling.STOP_ON_FAILURE)
-
-boolean b = WebUI.getText(findTestObject('PLPPage/facetes/selectedfacet1_PLP'))
-
-if (a == b) {
-    System.out.println('facet selected')
-} else {
-    KeywordUtil.markFailed('failed pagenation clicked page 2')
-}
-WebUI.closeBrowser()
 

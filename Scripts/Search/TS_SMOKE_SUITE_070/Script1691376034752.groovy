@@ -27,18 +27,50 @@ WebUI.click(findTestObject('HomePage/Logo_hp'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
 
-a = WebUI.getText(findTestObject('PLPPage/product1_cardPrice_PLP'))
+WebUI.delay(5)
 
-WebUI.scrollToElement(findTestObject('PLPPage/pagenation_1_PDP'), 0)
+WebUI.scrollToElement(findTestObject('PLPPage/ForwardArrow_Pagenation_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('PLPPage/pagenation_2_PDP'), 0)
+WebUI.delay(10)
 
-WebUI.click(findTestObject('PLPPage/pagenation_2_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/ForwardArrow_Pagenation_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-b = WebUI.getText(findTestObject('PLPPage/product1_cardPrice_PLP'))
+WebUI.delay(10)
 
-if (a != b) {
-    System.out.println('checked')
+a1 = WebUI.getUrl()
+
+System.out.println(a1)
+
+boolean a = a1.contains('page-2')
+
+System.out.println(a)
+
+WebUI.delay(5)
+
+WebUI.scrollToElement(findTestObject('PLPPage/BackArrow_Pagenation_PLP'), 0)
+
+WebUI.delay(10)
+
+WebUI.click(findTestObject('PLPPage/BackArrow_Pagenation_PLP'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
+if (a == true) {
+    System.out.println('pagenation clicked page 2')
+} else {
+    KeywordUtil.markFailed('failed pagenation clicked page 2')
+}
+
+b1 = WebUI.getUrl()
+
+boolean b = b1.contains('page-1')
+
+System.out.println(b1)
+
+if (b == true) {
+    System.out.println('pagenation clicked page 1')
+} else {
+    KeywordUtil.markFailed('failed pagenation clicked page 1')
 }
 
 WebUI.closeBrowser()
