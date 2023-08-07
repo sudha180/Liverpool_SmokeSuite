@@ -21,7 +21,7 @@ WebUI.click(findTestObject('HomePage/Buscar1'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('HomePage/Buscar1'), searchTerm)
 
-WebUI.delay(5)
+WebUI.delay(3)
 
 WebUI.sendKeys(findTestObject('HomePage/Seach_TextBox_hp'), Keys.chord(Keys.ENTER))
 

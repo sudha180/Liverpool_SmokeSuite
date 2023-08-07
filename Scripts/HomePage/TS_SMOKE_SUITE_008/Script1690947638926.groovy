@@ -25,7 +25,7 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('HomePage/Tiendas_HP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('SLP/regalu'), 0)
+WebUI.verifyElementPresent(findTestObject('SLP/breadCrumb_SLP'), 0)
 
 WebUI.verifyElementPresent(findTestObject('SLP/Map_Verify_slp'), 0)
 
