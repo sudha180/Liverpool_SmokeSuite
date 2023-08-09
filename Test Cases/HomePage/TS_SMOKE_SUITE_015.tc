@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>To verify the display of following links by mouse over on the &quot;User name&quot;  link on the header section.
+ -  Mi cuenta
+-  Mis pedidos
+-  Mi tiempo Aire
+-  Mis tarjetas
+-  Cerrar sesion</description>
    <name>TS_SMOKE_SUITE_015</name>
    <tag></tag>
    <comment></comment>

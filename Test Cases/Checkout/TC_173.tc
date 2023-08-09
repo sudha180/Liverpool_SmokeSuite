@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>When the login user adds a new shipping address should show a option to predetermine the address, the systems should validate the nickname and save the address into the account, the user clicking “Continuar” button from One Page checkout.</description>
-   <name>TC_173</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>efa0db1f-3898-49d0-aaee-9dc78e8a2c42</testCaseGuid>
-</TestCaseEntity>

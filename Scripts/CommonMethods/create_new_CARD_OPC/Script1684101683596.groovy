@@ -1,5 +1,5 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import org.apache.commons.lang.RandomStringUtils
+import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -25,11 +25,13 @@ WebUI.click(findTestObject('OPCPage/Payment_Method_Card_OPC'), FailureHandling.O
 'to set card as default card\r\n'
 WebUI.click(findTestObject('OPCPage/addnewcard_Popup_OPC'), FailureHandling.OPTIONAL)
 
-String cardnumber=RandomStringUtils.randomNumeric(16)
+String cardnumber = RandomStringUtils.randomNumeric(16)
 
-WebUI.setText(findTestObject('OPCPage/newCardNumber_OPC'),cardnumber)
+String cardname = RandomStringUtils.randomAlphabetic(8)
 
-WebUI.setText(findTestObject('OPCPage/EnterCardAlias_OPC'), 'sharma')
+WebUI.setText(findTestObject('OPCPage/newCardNumber_OPC'), cardnumber)
+
+WebUI.setText(findTestObject('OPCPage/EnterCardAlias_OPC'), cardname)
 
 WebUI.setText(findTestObject('OPCPage/enterCardName_OPC'), 'vedant')
 
@@ -42,4 +44,10 @@ WebUI.click(findTestObject('OPCPage/AddCard_continue_POPup_OPC'))
 WebUI.delay(4)
 
 WebUI.callTestCase(findTestCase('CommonMethods/close any pop up'), [:], FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'))
+
+WebUI.click(findTestObject('OPCPage/paymentMethod_button1_OPC'))
+
+WebUI.verifyTextPresent(cardname, false)
 

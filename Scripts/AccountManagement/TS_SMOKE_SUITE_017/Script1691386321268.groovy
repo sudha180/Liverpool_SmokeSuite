@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
 
 WebUI.openBrowser('')
 
@@ -40,7 +41,15 @@ WebUI.callTestCase(findTestCase('CommonMethods/SaveAddress_AccountManagment'), [
 
 WebUI.click(findTestObject('AccountManagement/KeepButtonClickNCollection_Account'))
 
-WebUI.verifyElementPresent(findTestObject('AccountManagement/FirstPersonalShippingAddress_Account'), 0)
+address = WebUI.getText(findTestObject('AccountManagement/FirstPersonalShippingAddress_Account'), FailureHandling.STOP_ON_FAILURE)
 
+if(GlobalVariable.TempAddress == address)
+{
+	println('Address is Added!')
+}
+else 
+{
+	KeywordUtil.markFailed('Address is not Added !')
+}
 WebUI.closeBrowser()
 

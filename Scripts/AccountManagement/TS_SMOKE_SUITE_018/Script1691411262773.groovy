@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
 
@@ -40,9 +41,21 @@ WebUI.click(findTestObject('AccountManagement/SelectStateClickNCollection_Accoun
 
 WebUI.click(findTestObject('AccountManagement/StateOptionClickNCollection_Account'))
 
+StoreAddress = WebUI.getText(findTestObject('AccountManagement/StoreNameClickNCollection_Account'))
+
 WebUI.click(findTestObject('AccountManagement/KeepButtonClickNCollection_Account'))
 
 WebUI.verifyElementPresent(findTestObject('AccountManagement/ClickNCollectionFirstAddress_Account'), 0)
+
+address = WebUI.getText(findTestObject('AccountManagement/ClickNCollectionFirstAddress_Account'), FailureHandling.STOP_ON_FAILURE)
+
+if (StoreAddress == address) {
+    println('Address is Added !')
+} 
+else 
+	{
+    KeywordUtil.markFailed('Address is not Added !')
+}
 
 WebUI.closeBrowser()
 

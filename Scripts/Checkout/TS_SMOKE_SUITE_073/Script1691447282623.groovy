@@ -53,7 +53,7 @@ WebUI.setText(findTestObject('OPCPage/shortName_addAddress_opc'), GlobalVariable
 
 WebUI.click(findTestObject('OPCPage/ContinueButtonAddAddress_Checkout'))
 
-WebUI.navigateToUrl(GlobalVariable.url)
+WebUI.click(findTestObject('HomePage/Logo_hp'))
 
 WebUI.mouseOver(findTestObject('HomePage/span_HolaUser_hp'))
 

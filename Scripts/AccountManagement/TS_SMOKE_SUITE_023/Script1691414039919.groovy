@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
 
 WebUI.openBrowser('')
 
@@ -36,13 +37,54 @@ WebUI.click(findTestObject('AccountManagement/MyPaymentMethod_Account'))
 
 WebUI.click(findTestObject('AccountManagement/MyCardButton_Account'))
 
-WebUI.verifyElementPresent(findTestObject('AccountManagement/AddCardButton_Account'), 0)
+WebUI.click(findTestObject('AccountManagement/AddCardButton_Account'), FailureHandling.STOP_ON_FAILURE)
 
+Cardname = CustomKeywords.'customkeywords.myKeywords.randomString'()
+
+WebUI.setText(findTestObject('AccountManagement/CardName_Account'), Cardname)
+
+FullName = CustomKeywords.'customkeywords.myKeywords.randomString'()
+
+WebUI.callTestCase(findTestCase('CommonMethods/AddCard_Account'), [:], FailureHandling.STOP_ON_FAILURE)
+
+CardName = WebUI.getText(findTestObject('AccountManagement/CardNameGrid_Account'))
+
+if (Cardname == CardName) {
+    println('Add Card Successful')
+}
+else
+	{
+	KeywordUtil.markFailed('Card is not Added !')
+}
 WebUI.click(findTestObject('AccountManagement/Select3DotAddress2Nd_Account'))
 
-WebUI.verifyElementPresent(findTestObject('AccountManagement/EditCardDetails_Account'), 0)
+WebUI.click(findTestObject('AccountManagement/EditCardDetails_Account'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AccountManagement/RemoveCardDetails_Account'), 0)
+Cardname = CustomKeywords.'customkeywords.myKeywords.randomString'()
 
+WebUI.setText(findTestObject('AccountManagement/CardName_Account'), Cardname)
+
+WebUI.click(findTestObject('AccountManagement/AcceptButton_AccountM'))
+
+CardName = WebUI.getText(findTestObject('AccountManagement/CardNameGrid_Account'))
+
+if (Cardname == CardName) {
+    println('Cart Update Successful')
+}
+else
+	{
+	KeywordUtil.markFailed('Card is not updated !')
+}
+WebUI.click(findTestObject('AccountManagement/Select3DotAddress2Nd_Account'))
+
+WebUI.click(findTestObject('AccountManagement/RemoveCardDetails_Account'), FailureHandling.STOP_ON_FAILURE)
+
+if (Cardname == null) {
+    println('Card remove Successful')
+}
+else
+	{
+	KeywordUtil.markFailed('Card is not Removed !')
+}
 WebUI.closeBrowser()
 

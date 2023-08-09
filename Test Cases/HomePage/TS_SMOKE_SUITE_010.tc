@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>To verify that the logged in user is navigated to  “Mis pedidos&quot; page by clicking on the  “Mis pedidos&quot; link on the header section.</description>
    <name>TS_SMOKE_SUITE_010</name>
    <tag></tag>
    <comment></comment>

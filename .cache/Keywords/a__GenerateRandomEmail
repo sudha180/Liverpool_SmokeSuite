@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "FCF69AF55B657F4025DD69EEB8F4FE7E",
+  "keywordFileContentHash": "709F9089497005C089EA16567E310385",
   "keywordClasses": [
     {
       "name": "a.myKeywords",
@@ -11,6 +11,11 @@
         },
         {
           "name": "refreshBrowser",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "generateRandomText",
           "parameters": [],
           "javadoc": ""
         },

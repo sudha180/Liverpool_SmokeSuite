@@ -42,5 +42,7 @@ WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/addAddress_fillform_opc'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.verifyTextPresent(StoreValue, false)
+
 WebUI.closeBrowser()
 

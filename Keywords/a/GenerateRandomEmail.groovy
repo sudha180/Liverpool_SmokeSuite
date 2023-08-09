@@ -56,7 +56,14 @@ class myKeywords {
 		KeywordUtil.markPassed("Refresh successfully")
 	}
 
+	@Keyword
+	def generateRandomText() {
 
+		String generatedstring=RandomStringUtils.random(8);
+		String text = generatedstring
+		KeywordUtil.logInfo(text)
+		return text
+	}
 
 	/**
 	 * Click element

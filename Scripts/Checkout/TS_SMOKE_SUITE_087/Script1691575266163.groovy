@@ -36,17 +36,19 @@ WebUI.click(findTestObject('HomePage/bag_header_HP'))
 
 WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'))
+WebUI.click(findTestObject('OPCPage/paymentMethod_button1_OPC'), FailureHandling.OPTIONAL)
 
-StoreValue = CustomKeywords.'com.katalon.sudha.GenerateRandomEmail.getRandomText'('Test')
+WebUI.setText(findTestObject('OPCPage/enterCardCVV_OPC'), '413', FailureHandling.OPTIONAL)
 
-WebUI.callTestCase(findTestCase('CommonMethods/addAddress_fillform_opc'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('OPCPage/enterCardExpire_OPC'), '1225', FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'))
+WebUI.click(findTestObject('OPCPage/cardContinue_checkout_popUP'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('OPCPage/FirstAddressDefault_Checkout'), 0)
+WebUI.click(findTestObject('OPCPage/Final_comparar_OPC'))
+
+WebUI.verifyElementPresent(findTestObject('OPCPage/ConfirmOrder_Checkout'), 0)
 
 WebUI.closeBrowser()
 
