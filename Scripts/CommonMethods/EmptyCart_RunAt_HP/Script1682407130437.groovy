@@ -34,7 +34,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 //List<WebElement> wes = WebUiCommonHelper.findWebElements(WebUI.verifyElementPresent(findTestObject('1vedant/PDP/Product1_remove_cart')))
 WebUI.delay(2, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('PDPpage/Bag_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('HomePage/bag_header_HP'), FailureHandling.OPTIONAL)
 
 List<WebElement> listElement = WebUI.findWebElements(findTestObject('CartPage/Product1_remove_cart'), 2)
 
@@ -53,5 +53,5 @@ for (int i = 0; i < noOfProducts; i++) {
     }
 }
 
-WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('HomePage/Logo_hp'), FailureHandling.OPTIONAL)
 

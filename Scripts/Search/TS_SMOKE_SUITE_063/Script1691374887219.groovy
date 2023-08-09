@@ -29,7 +29,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.scrollToElement(findTestObject('PLPPage/facetes/ColorTitleFacet_PLP'), 0)
 
-WebUI.click(findTestObject('PLPPage/facetes/Color_1_facet_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/Color_1_facet_PLP'), 0)
 
 WebUI.closeBrowser()
 

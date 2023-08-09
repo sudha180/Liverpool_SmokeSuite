@@ -19,13 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('HomePage/username'))
+WebUI.click(findTestObject('HomePage/EnterUsername_LP'))
 
-WebUI.setText(findTestObject('HomePage/username'), username)
+WebUI.setText(findTestObject('HomePage/EnterUsername_LP'), username)
 
-WebUI.click(findTestObject('HomePage/password'))
+WebUI.click(findTestObject('HomePage/EnterPassword_LP'))
 
-WebUI.setText(findTestObject('HomePage/password'), password)
+WebUI.setText(findTestObject('HomePage/EnterPassword_LP'), password)
 
-WebUI.click(findTestObject('HomePage/action'))
+WebUI.click(findTestObject('HomePage/inciar'))
 

@@ -3,7 +3,7 @@
    <description></description>
    <name>ShippingAddress3_Checkout</name>
    <tag></tag>
-   <elementGuidId>5d35abdb-6a8d-4337-b624-0d310265090c</elementGuidId>
+   <elementGuidId>cd8500f7-f3b9-4a50-ac88-71310fec8055</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

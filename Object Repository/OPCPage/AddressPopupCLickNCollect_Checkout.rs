@@ -3,7 +3,7 @@
    <description></description>
    <name>AddressPopupCLickNCollect_Checkout</name>
    <tag></tag>
-   <elementGuidId>ae734243-ea15-442f-a6fd-b6aebf9f5960</elementGuidId>
+   <elementGuidId>90a9a1dc-57c5-46ba-9358-d1386817ffba</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

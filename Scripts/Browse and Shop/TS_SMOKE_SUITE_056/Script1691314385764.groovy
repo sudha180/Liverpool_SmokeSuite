@@ -21,40 +21,29 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
+WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'set'], FailureHandling.STOP_ON_FAILURE)
+
 a = CustomKeywords.'a.GenerateRandomEmail.generateRandomEmail'()
+
 System.out.println(a)
 
-WebUI.mouseOver(findTestObject('HomePage/Departamentos'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('HomePage/L1_Category1_HP'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'), FailureHandling.STOP_ON_FAILURE)
-
-'verify price range\r\n'
 WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
-'verify pdp price\r\n\r\n'
+WebUI.verifyElementClickable(findTestObject('PDPPage/ProductName_PDP'))
+
+WebUI.verifyElementClickable(findTestObject('PDPPage/ProductID_pdp'))
+
 WebUI.verifyElementClickable(findTestObject('PDPPage/discountPrice_PDP'))
 
-'verify pdp price\r\n\r\n'
-WebUI.verifyElementClickable(findTestObject('PDPPage/breadCrumb_pdp'))
-
-'verify pdp price\r\n\r\n'
 WebUI.verifyElementClickable(findTestObject('PDPPage/Colour1_PDP'))
 
-'verify pdp price\r\n\r\n'
-WebUI.verifyElementClickable(findTestObject('PDPPage/mas detalis(more detail)'))
-
-'verify pdp price\r\n\r\n'
-WebUI.verifyElementClickable(findTestObject('PDPPage/AddToCart_PDP'))
-
-'verify pdp price\r\n\r\n'
 WebUI.verifyElementClickable(findTestObject('PDPPage/Alternate_Img_pdp'))
 
-'verify pdp price\r\n\r\n'
+WebUI.verifyElementClickable(findTestObject('PDPPage/AddToCart_PDP'))
+
 WebUI.verifyElementClickable(findTestObject('PDPPage/Detail_PDP'))
+
+WebUI.verifyElementClickable(findTestObject('PDPPage/breadCrumb_pdp'))
 
 WebUI.closeBrowser()
 

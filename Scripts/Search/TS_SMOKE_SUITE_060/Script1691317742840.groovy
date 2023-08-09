@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
 
@@ -39,7 +39,8 @@ boolean b = WebUI.getText(findTestObject('PLPPage/facetes/selectedfacet1_PLP'))
 if (a == b) {
     System.out.println('facet selected')
 } else {
-    KeywordUtil.markFailed('failed pagenation clicked page 2')
+    KeywordUtil.markFailed('failed facet not selected')
 }
+
 WebUI.closeBrowser()
 

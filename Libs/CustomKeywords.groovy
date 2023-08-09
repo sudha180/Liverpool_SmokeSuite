@@ -9,75 +9,85 @@ import java.lang.String
 
 
 
-def static "a.myKeywords.generateRandomEmail"() {
-    (new a.myKeywords()).generateRandomEmail()
+def static "customkeywords.myKeywords.generateRandomEmail"() {
+    (new customkeywords.myKeywords()).generateRandomEmail()
 }
 
-
-def static "a.myKeywords.refreshBrowser"() {
-    (new a.myKeywords()).refreshBrowser()
+ /**
+	 * Refresh browser
+	 */ 
+def static "customkeywords.myKeywords.refreshBrowser"() {
+    (new customkeywords.myKeywords()).refreshBrowser()
 }
 
-
-def static "a.myKeywords.clickElement"(
+ /**
+	 * Click element
+	 * @param to Katalon test object
+	 */ 
+def static "customkeywords.myKeywords.clickElement"(
     	TestObject to	) {
-    (new a.myKeywords()).clickElement(
+    (new customkeywords.myKeywords()).clickElement(
         	to)
 }
 
 
-def static "a.myKeywords.clickElementWithoutScroll"(
+def static "customkeywords.myKeywords.clickElementWithoutScroll"(
     	TestObject to	) {
-    (new a.myKeywords()).clickElementWithoutScroll(
+    (new customkeywords.myKeywords()).clickElementWithoutScroll(
         	to)
 }
 
-
-def static "a.myKeywords.getHtmlTableRows"(
+ /**
+	 * Get all rows of HTML table
+	 * @param table Katalon test object represent for HTML table
+	 * @param outerTagName outer tag name of TR tag, usually is TBODY
+	 * @return All rows inside HTML table
+	 */ 
+def static "customkeywords.myKeywords.getHtmlTableRows"(
     	TestObject table	
      , 	String outerTagName	) {
-    (new a.myKeywords()).getHtmlTableRows(
+    (new customkeywords.myKeywords()).getHtmlTableRows(
         	table
          , 	outerTagName)
 }
 
 
-def static "a.myKeywords.scrollWindow"() {
-    (new a.myKeywords()).scrollWindow()
+def static "customkeywords.myKeywords.scrollWindow"() {
+    (new customkeywords.myKeywords()).scrollWindow()
 }
 
 
-def static "a.myKeywords.scrollToTop"() {
-    (new a.myKeywords()).scrollToTop()
+def static "customkeywords.myKeywords.scrollToTop"() {
+    (new customkeywords.myKeywords()).scrollToTop()
 }
 
 
-def static "a.myKeywords.highlightElement1"() {
-    (new a.myKeywords()).highlightElement1()
+def static "customkeywords.myKeywords.highlightElement1"() {
+    (new customkeywords.myKeywords()).highlightElement1()
 }
 
 
-def static "a.myKeywords.highlightElement"(
+def static "customkeywords.myKeywords.highlightElement"(
     	TestObject objectto	) {
-    (new a.myKeywords()).highlightElement(
+    (new customkeywords.myKeywords()).highlightElement(
         	objectto)
 }
 
 
-def static "a.myKeywords.verifyElementPresentKeyword"(
+def static "customkeywords.myKeywords.verifyElementPresentKeyword"(
     	TestObject to	) {
-    (new a.myKeywords()).verifyElementPresentKeyword(
+    (new customkeywords.myKeywords()).verifyElementPresentKeyword(
         	to)
 }
 
 
-def static "a.myKeywords.randomString"() {
-    (new a.myKeywords()).randomString()
+def static "customkeywords.myKeywords.randomString"() {
+    (new customkeywords.myKeywords()).randomString()
 }
 
 
-def static "a.myKeywords.removeDollar"(
+def static "customkeywords.myKeywords.removeDollar"(
     	String withDollarprice	) {
-    (new a.myKeywords()).removeDollar(
+    (new customkeywords.myKeywords()).removeDollar(
         	withDollarprice)
 }

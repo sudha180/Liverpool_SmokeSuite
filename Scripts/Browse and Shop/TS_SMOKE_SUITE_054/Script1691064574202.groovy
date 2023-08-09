@@ -23,8 +23,17 @@ WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : '80282837'], FailureHandling.STOP_ON_FAILURE)
 
-'verify price range\r\n'
-WebUI.verifyElementClickable(findTestObject('PDPPage/minus(-)(priceRange)_PDP'))
+'verify sku not present\r\n'
+WebUI.verifyElementNotPresent(findTestObject('PDPPage/Colour2_PDP'), 0)
+
+'verify sku not present\r\n'
+WebUI.verifyElementNotPresent(findTestObject('PDPPage/Size2_PDP'), 0)
+
+'verify discount price present\r\n'
+WebUI.verifyElementPresent(findTestObject('PDPPage/discountPrice_PDP'), 0)
+
+'verify card price present\r\n'
+WebUI.verifyElementPresent(findTestObject('PDPPage/cardPrice_PDP'), 0)
 
 WebUI.closeBrowser()
 

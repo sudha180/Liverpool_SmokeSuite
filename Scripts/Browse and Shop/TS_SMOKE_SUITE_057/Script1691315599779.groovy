@@ -41,13 +41,20 @@ WebUI.verifyElementClickable(findTestObject('PDPPage/Colour1_PDP'))
 
 WebUI.verifyElementClickable(findTestObject('PDPPage/Colour2_PDP'))
 
-WebUI.verifyElementClickable(findTestObject('PDPPage/mas detalis(more detail)'))
-
 WebUI.verifyElementClickable(findTestObject('PDPPage/AddToCart_PDP'))
 
 WebUI.verifyElementClickable(findTestObject('PDPPage/Alternate_Img_pdp'))
 
 '\r\n'
+WebUI.verifyElementClickable(findTestObject('PDPPage/Detail_PDP'))
+
+'verify pdp price\r\n\r\n'
+WebUI.verifyElementClickable(findTestObject('PDPPage/ProductName_PDP'))
+
+'verify pdp price\r\n\r\n'
+WebUI.verifyElementClickable(findTestObject('PDPPage/ProductID_pdp'))
+
+'verify pdp price\r\n\r\n'
 WebUI.verifyElementClickable(findTestObject('PDPPage/Detail_PDP'))
 
 WebUI.closeBrowser()

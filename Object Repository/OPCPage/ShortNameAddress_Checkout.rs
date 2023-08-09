@@ -3,7 +3,7 @@
    <description></description>
    <name>ShortNameAddress_Checkout</name>
    <tag></tag>
-   <elementGuidId>35fc4f13-9aff-4e4e-ac60-f90746345776</elementGuidId>
+   <elementGuidId>bcc6c18f-2915-4f98-a03f-284d47836510</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

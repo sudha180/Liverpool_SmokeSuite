@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class='m-cardBox addressBlock-container'])[62]</value>
+         <value>(//div[@class='m-cardBox addressBlock-container'])</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

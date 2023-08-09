@@ -21,11 +21,13 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : '80282837'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : '1002504924'], FailureHandling.STOP_ON_FAILURE)
+
+'verify milti sku\r\n'
+WebUI.verifyElementPresent(findTestObject('PDPPage/Colour2_PDP'), 0)
 
 'verify price range\r\n'
-WebUI.verifyElementClickable(findTestObject('PDPPage/cardPrice_PDP'))
+WebUI.verifyElementPresent(findTestObject('PDPPage/minus(-)(priceRange)_PDP'), 0)
 
-'verify price range\r\n'
-WebUI.verifyElementClickable(findTestObject('PDPPage/discountPrice_PDP'))
+WebUI.closeBrowser()
 

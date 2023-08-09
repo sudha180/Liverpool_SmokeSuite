@@ -17,22 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('HomePage/paypalpayment'))
+ WebUI.switchToWindowTitle('Log in to your PayPal account')
 
-WebUI.click(findTestObject('OPCPage/button_Continuar_payment_opc 1'))
+ WebUI.click(findTestObject('OPCPage/paypal_inputID_checkout'))
 
-not_run: WebUI.switchToWindowTitle('Log in to your PayPal account')
+ WebUI.setText(findTestObject('OPCPage/paypal_inputID_checkout'), 'liverpool@paypal.com')
 
-not_run: WebUI.click(findTestObject('OPCPage/paypal_inputID_checkout'))
+ WebUI.click(findTestObject('OPCPage/paypal_next_button_popup'), FailureHandling.OPTIONAL)
 
-not_run: WebUI.setText(findTestObject('OPCPage/paypal_inputID_checkout'), 'liverpool@paypal.com')
+ WebUI.click(findTestObject('OPCPage/paypal-password'), FailureHandling.OPTIONAL)
 
-not_run: WebUI.click(findTestObject('OPCPage/paypal_next_button_popup'), FailureHandling.OPTIONAL)
+ WebUI.setText(findTestObject('OPCPage/paypal-password'), 'cordoba213VKY', FailureHandling.OPTIONAL)
 
-not_run: WebUI.click(findTestObject('OPCPage/paypal-password'), FailureHandling.OPTIONAL)
+ WebUI.click(findTestObject('OPCPage/loginbutton_paypal_cop'))
 
-not_run: WebUI.setText(findTestObject('OPCPage/paypal-password'), 'cordoba213VKY', FailureHandling.OPTIONAL)
+ WebUI.click(findTestObject('OPCPage/acceptAndContinue'))
 
-not_run: WebUI.click(findTestObject('OPCPage/loginbutton_paypal_cop'))
-
-not_run: WebUI.click(findTestObject('OPCPage/acceptAndContinue'))

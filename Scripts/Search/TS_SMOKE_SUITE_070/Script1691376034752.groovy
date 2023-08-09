@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import com.kms.katalon.core.util.KeywordUtil
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
@@ -31,7 +31,7 @@ WebUI.delay(5)
 
 WebUI.scrollToElement(findTestObject('PLPPage/ForwardArrow_Pagenation_PLP'), 0)
 
-WebUI.delay(10)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('PLPPage/ForwardArrow_Pagenation_PLP'), FailureHandling.STOP_ON_FAILURE)
 
@@ -47,19 +47,19 @@ System.out.println(a)
 
 WebUI.delay(5)
 
+if (a == true) {
+	System.out.println('pagenation clicked page 2')
+} else {
+	KeywordUtil.markFailed('failed pagenation forward arrow not clicked')
+}
+
 WebUI.scrollToElement(findTestObject('PLPPage/BackArrow_Pagenation_PLP'), 0)
 
-WebUI.delay(10)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('PLPPage/BackArrow_Pagenation_PLP'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)
-
-if (a == true) {
-    System.out.println('pagenation clicked page 2')
-} else {
-    KeywordUtil.markFailed('failed pagenation clicked page 2')
-}
 
 b1 = WebUI.getUrl()
 
@@ -70,7 +70,7 @@ System.out.println(b1)
 if (b == true) {
     System.out.println('pagenation clicked page 1')
 } else {
-    KeywordUtil.markFailed('failed pagenation clicked page 1')
+    KeywordUtil.markFailed('failed pagenation back arrow not clicked')
 }
 
 WebUI.closeBrowser()

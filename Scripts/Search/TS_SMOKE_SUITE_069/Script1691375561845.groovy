@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
 
@@ -36,17 +36,27 @@ productcardprice2 = WebUI.getText(findTestObject('PLPPage/product2_cardPrice_PLP
 
 productcardprice3 = WebUI.getText(findTestObject('PLPPage/product3_cardPrice_PLP'))
 
-if ((productcardprice1 <= productcardprice2)&&(productcardprice2 <= productcardprice3)) {
+if ((productcardprice1 <= productcardprice2) && (productcardprice2 <= productcardprice3)) {
     println('in sorted order arccording to first three product')
-}  else {
-    KeywordUtil.markFailed('failed pagenation clicked page 2')
+} else {
+    KeywordUtil.markFailed('failed not sorted low to high')
 }
-/*
-if (productcardprice2 <= productcardprice3) {
-    println('checked2')
-}  else {
-    KeywordUtil.markFailed('failed pagenation clicked page 2')
+
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
+
+WebUI.click(findTestObject('PLPPage/HighToLowPriceSortby_PLP'))
+
+productcardprice1 = WebUI.getText(findTestObject('PLPPage/product1_cardPrice_PLP'))
+
+productcardprice2 = WebUI.getText(findTestObject('PLPPage/product2_cardPrice_PLP'))
+
+productcardprice3 = WebUI.getText(findTestObject('PLPPage/product3_cardPrice_PLP'))
+
+if ((productcardprice1 >= productcardprice2) && (productcardprice2 >= productcardprice3)) {
+    println('in sorted order arccording to first three product')
+} else {
+    KeywordUtil.markFailed('failed not sorted high to low')
 }
-*/
+
 WebUI.closeBrowser()
 

@@ -16,16 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('HomePage/Logo_hp'))
-
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
 'verify price range\r\n'
 a = WebUI.getText(findTestObject('PLPPage/product1_cardPrice_PLP'))
@@ -43,6 +40,8 @@ System.out.println(b1)
 
 if ((a1 == true) && (b1 == true)) {
     System.out.println('verifed')
+} else {
+    KeywordUtil.markFailed('failed condition')
 }
 
 WebUI.closeBrowser()

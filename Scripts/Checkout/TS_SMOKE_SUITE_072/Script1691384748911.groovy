@@ -17,3 +17,30 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl(GlobalVariable.url)
+
+WebUI.maximizeWindow()
+
+WebUI.click(findTestObject('HomePage/Iniciar sesion'))
+
+WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLProduct], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
+
+WebUI.click(findTestObject('HomePage/bag_header_HP'))
+
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
+
+WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
+
+WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'))
+
+WebUI.callTestCase(findTestCase('CommonMethods/addAddress_fillform_opc'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.closeBrowser()
+

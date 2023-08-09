@@ -3,11 +3,11 @@
    <description></description>
    <name>DefaultAddress_Checkout</name>
    <tag></tag>
-   <elementGuidId>80a1cdc9-c0a3-4972-913d-d7c68fc4e299</elementGuidId>
+   <elementGuidId>baa1c58a-f74d-4665-975e-2c6ab5d8a8ca</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class='opc_home-delivery-addresses'])[1]</value>
+         <value>//div[@id='opc_section-deliAddress']</value>
       </entry>
       <entry>
          <key>BASIC</key>

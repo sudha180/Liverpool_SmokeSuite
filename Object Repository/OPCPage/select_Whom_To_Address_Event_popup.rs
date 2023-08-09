@@ -3,7 +3,7 @@
    <description>to select whom to address as the gift sender</description>
    <name>select_Whom_To_Address_Event_popup</name>
    <tag></tag>
-   <elementGuidId>8af8fad9-546b-4ce3-9238-10f3912a0b0e</elementGuidId>
+   <elementGuidId>bf007401-9a7d-4471-a91b-7984e2737b09</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

@@ -3,7 +3,7 @@
    <description></description>
    <name>StreetAddress_Checkout</name>
    <tag></tag>
-   <elementGuidId>3329b062-6ded-46ab-b27f-cb1ce62c31c5</elementGuidId>
+   <elementGuidId>62a51d09-fd55-4d9e-9ea9-75e6220fb793</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[contains(text(), 'Continuar')]</value>
+         <value>(//button[@class='a-btn a-btn--primary'])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

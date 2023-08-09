@@ -3,7 +3,7 @@
    <description></description>
    <name>VerifyAddressOPC_Checkout</name>
    <tag></tag>
-   <elementGuidId>5167eae0-989d-4a51-b79d-1f7d61135e2d</elementGuidId>
+   <elementGuidId>f69edcf0-b102-4d02-81cd-66cc7f7df922</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

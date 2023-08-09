@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import org.apache.commons.lang.RandomStringUtils
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -24,7 +25,9 @@ WebUI.click(findTestObject('OPCPage/Payment_Method_Card_OPC'), FailureHandling.O
 'to set card as default card\r\n'
 WebUI.click(findTestObject('OPCPage/addnewcard_Popup_OPC'), FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('OPCPage/newCardNumber_OPC'), '4343434311111111')
+String cardnumber=RandomStringUtils.randomNumeric(16)
+
+WebUI.setText(findTestObject('OPCPage/newCardNumber_OPC'),cardnumber)
 
 WebUI.setText(findTestObject('OPCPage/EnterCardAlias_OPC'), 'sharma')
 
@@ -34,7 +37,7 @@ WebUI.setText(findTestObject('OPCPage/enterCardExpire_OPC'), '12/24')
 
 WebUI.setText(findTestObject('OPCPage/enterCardCVV_OPC'), '123')
 
-WebUI.click(findTestObject('1vedant/Page_/continueButton_cardPOPup_CO1'))
+WebUI.click(findTestObject('OPCPage/AddCard_continue_POPup_OPC'))
 
 WebUI.delay(4)
 

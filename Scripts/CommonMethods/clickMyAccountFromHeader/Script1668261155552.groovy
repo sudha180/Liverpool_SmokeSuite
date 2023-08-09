@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Object Repository/AccountManagement/span_Hola header_HP'))
+WebUI.click(findTestObject('HomePage/header_Hola_text_HP'))
 
-WebUI.click(findTestObject('Object Repository/AccountManagement/a_Mi Cuenta'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('HomePage/myAccount_hp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/AccountManagement/aside_Mi Cuenta_leftnav_AM'), 0)
+WebUI.verifyElementPresent(findTestObject('AccountManagement/miCuenta_breadCrumb_MyAccount'), 0)
 
