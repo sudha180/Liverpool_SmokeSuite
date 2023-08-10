@@ -3,7 +3,7 @@
    <description></description>
    <name>default</name>
    <tag></tag>
-   <defaultProfile>false</defaultProfile>
+   <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://odtaqaa.liverpool.com.mx/tienda/home'</initValue>
@@ -151,7 +151,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Jeans\r\n'</initValue>
+      <initValue>'Jeans'</initValue>
       <name>SL_Product1</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -453,5 +453,20 @@
       <description></description>
       <initValue>'https://odtaqab.liverpool.com.mx/tienda/home'</initValue>
       <name>URLab</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://odtaqab.liverpool.com.mx/'</initValue>
+      <name>LiverpoolURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://odtaqab.liverpool.com.mx/tienda/oneCheckout'</initValue>
+      <name>CheckoutLink</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'MAC'</initValue>
+      <name>SL</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

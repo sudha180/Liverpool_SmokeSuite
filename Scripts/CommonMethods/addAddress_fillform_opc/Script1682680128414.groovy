@@ -16,37 +16,36 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 
-String StoreValue
+String StoreValue = 'AUTOMATION' + RandomStringUtils.randomAlphabetic(8)
 
-StoreValue = CustomKeywords.'com.katalon.sudha.GenerateRandomEmail.getRandomText'('Test')
+System.out.println(StoreValue)
 
-WebUI.setText(findTestObject('OPCPage/shortName_addAddress_opc (2)'), StoreValue)
+WebUI.setText(findTestObject('OPCPage/shortName_addAddress_opc'), StoreValue)
 
-WebUI.setText(findTestObject('checkoutpage/mothersLastName_addAddress_opc'), GlobalVariable.MotherName)
+WebUI.setText(findTestObject('OPCPage/mothersLastName_addAddress_opc'), GlobalVariable.MotherName)
 
-WebUI.setText(findTestObject('checkoutpage/postalCode_addAddress_opc'), GlobalVariable.PostalCode)
+WebUI.setText(findTestObject('OPCPage/postalCode_addAddress_opc'), GlobalVariable.PostalCode)
 
 WebUI.setText(findTestObject('OPCPage/city_addAddress_opc'), GlobalVariable.CityAddAddress)
 
-not_run: WebUI.click(findTestObject('Object Repository/DemoObjects/checkoutpage/div_SeleccionarOTRA COLONIABARRIO DE LA LUZ_b7213d'))
+WebUI.click(findTestObject('OPCPage/street_addAddress_opc'))
 
-WebUI.click(findTestObject('checkoutpage/street_addAddress_opc'))
+WebUI.setText(findTestObject('OPCPage/street_addAddress_opc'), GlobalVariable.StreetAddAddress)
 
-WebUI.setText(findTestObject('checkoutpage/street_addAddress_opc'), GlobalVariable.StreetAddAddress)
-
-WebUI.setText(findTestObject('checkoutpage/noExt_addAddress_opc'), GlobalVariable.NoExtAddAddress)
+WebUI.setText(findTestObject('OPCPage/noExt_addAddress_opc'), GlobalVariable.NoExtAddAddress)
 
 WebUI.setText(findTestObject('OPCPage/cellphone_addAddress_opc'), GlobalVariable.CellPhoneAddAddress)
 
-WebUI.setText(findTestObject('checkoutpage/LADA_addAddress_opc'), GlobalVariable.LADAaddAddress)
+WebUI.setText(findTestObject('OPCPage/LADA_addAddress_opc'), GlobalVariable.LADAaddAddress)
 
-WebUI.setText(findTestObject('checkoutpage/phone_addAddress_opc'), GlobalVariable.phoneAddAddress)
+WebUI.setText(findTestObject('OPCPage/phone_addAddress_opc'), GlobalVariable.phoneAddAddress)
 
 not_run: WebUI.selectOptionByValue(findTestObject('Object Repository/DemoObjects/checkoutpage/select_SeleccionarOTRA COLONIABARRIO DE LA _f31717'), 
     '0000000000082', true)
 
-WebUI.click(findTestObject('OPCPage/CheckBoxAddAddressPopup_Checkout'))
+WebUI.click(findTestObject('OPCPage/CheckBoxAddAddressPopup_OPC'))
 
 WebUI.click(findTestObject('OPCPage/ContinueButtonAddAddress_Checkout'))
 

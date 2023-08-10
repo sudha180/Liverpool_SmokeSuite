@@ -21,8 +21,6 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.click(findTestObject('HomePage/Mis Compras_hp'), FailureHandling.STOP_ON_FAILURE)
-
 WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('HomePage/Mis Compras_hp'))

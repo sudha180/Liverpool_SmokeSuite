@@ -17,17 +17,17 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
+    public static Object newuser
+     
+    /**
+     * <p></p>
+     */
     public static Object username
      
     /**
      * <p></p>
      */
     public static Object password
-     
-    /**
-     * <p></p>
-     */
-    public static Object newuser
      
     /**
      * <p>Profile default : pwaqa
@@ -450,6 +450,21 @@ Profile default : pwaqa</p>
      */
     public static Object URLab
      
+    /**
+     * <p></p>
+     */
+    public static Object LiverpoolURL
+     
+    /**
+     * <p></p>
+     */
+    public static Object CheckoutLink
+     
+    /**
+     * <p></p>
+     */
+    public static Object SL
+     
 
     static {
         try {
@@ -458,9 +473,9 @@ Profile default : pwaqa</p>
             selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters())
     
             url = selectedVariables['url']
+            newuser = selectedVariables['newuser']
             username = selectedVariables['username']
             password = selectedVariables['password']
-            newuser = selectedVariables['newuser']
             GIDcollection = selectedVariables['GIDcollection']
             username1 = selectedVariables['username1']
             password1 = selectedVariables['password1']
@@ -545,6 +560,9 @@ Profile default : pwaqa</p>
             GRpassword = selectedVariables['GRpassword']
             Url = selectedVariables['Url']
             URLab = selectedVariables['URLab']
+            LiverpoolURL = selectedVariables['LiverpoolURL']
+            CheckoutLink = selectedVariables['CheckoutLink']
+            SL = selectedVariables['SL']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

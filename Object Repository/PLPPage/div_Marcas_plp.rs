@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Marcas_plp</name>
+   <name>div_Marcas_PLP</name>
    <tag></tag>
    <elementGuidId>be575fcb-ed22-41a5-901d-4ba08fd68512</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@class='col a-text__filter']//label[contains(text(),'Marcas')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

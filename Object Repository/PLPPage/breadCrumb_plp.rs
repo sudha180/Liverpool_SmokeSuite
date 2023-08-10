@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>breadCrumb_plp</name>
+   <name>breadCrumb_PLP</name>
    <tag></tag>
    <elementGuidId>4ff36c40-2cb1-4d97-8ff0-69cd5badc9ac</elementGuidId>
    <selectorCollection>
