@@ -44,7 +44,7 @@ KeywordUtil.logInfo(noOfProducts)
 
 for (int i = 0; i < noOfProducts; i++) {
     // removeList.get(i).click(); 
-    WebUI.click(findTestObject('CartPage/Product1_remove_cart'))
+    WebUI.click(findTestObject('OPCPage/product1_remove_OPC'))
 
     WebUI.delay(2)
 

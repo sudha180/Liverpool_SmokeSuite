@@ -1,0 +1,129 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+browserAndShop,Chrome 115.0.0.0,,,2023-08-10 01:34:54,2023-08-10 01:53:45,18m - 51.536s,FAILED
+,,,,,,,
+Test Cases/Browse and Shop/TS_SMOKE_SUITE_039,Chrome 115.0.0.0,To verify that the breadcrumbs are clickable when user has landed on L1 category page.,,2023-08-10 01:34:54,2023-08-10 01:35:53,59.166s,PASSED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 01:34:55,2023-08-10 01:34:58,3.072s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 01:34:58,2023-08-10 01:35:44,45.924s,PASSED
+"mouseOver(findTestObject(""HomePage/Departamentos""), STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:35:44,2023-08-10 01:35:45,1.293s,PASSED
+"click(findTestObject(""HomePage/L1_Category1_HP""), STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:35:45,2023-08-10 01:35:46,0.721s,PASSED
+"verifyElementClickable(findTestObject(""CLPPage/breadCrumb_clp""))",Chrome 115.0.0.0,,,2023-08-10 01:35:46,2023-08-10 01:35:52,6.864s,PASSED
+closeBrowser(),Chrome 115.0.0.0,,,2023-08-10 01:35:52,2023-08-10 01:35:53,0.809s,PASSED
+,,,,,,,
+Test Cases/Browse and Shop/TS_SMOKE_SUITE_047,Chrome 115.0.0.0,To verify the display of facets on the item listing page,,2023-08-10 01:35:53,2023-08-10 01:37:03,1m - 9.802s,PASSED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 01:35:53,2023-08-10 01:35:55,1.407s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 01:35:55,2023-08-10 01:36:40,44.841s,PASSED
+"mouseOver(findTestObject(""HomePage/Departamentos""), STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:36:40,2023-08-10 01:36:40,0.666s,PASSED
+"click(findTestObject(""HomePage/L1_Category1_HP""), STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:36:40,2023-08-10 01:36:41,0.520s,PASSED
+"click(findTestObject(""CLPPage/SubCategory2_leftmenu_CLP""), STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:36:41,2023-08-10 01:36:48,7.601s,PASSED
+"click(findTestObject(""CLPPage/SubCategory3_leftmenu_CLP""), STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:36:48,2023-08-10 01:36:55,6.553s,PASSED
+"verifyElementClickable(findTestObject(""CLPPage/breadCrumb_clp""))",Chrome 115.0.0.0,,,2023-08-10 01:36:55,2023-08-10 01:37:00,4.695s,PASSED
+"verifyElementPresent(findTestObject(""PLPPage/facetes/CategoríasTitleFacet_PLP""), 0)",Chrome 115.0.0.0,,,2023-08-10 01:37:00,2023-08-10 01:37:00,0.340s,PASSED
+"verifyElementPresent(findTestObject(""PLPPage/facetes/DescontousTitleFacet_PLP""), 0)",Chrome 115.0.0.0,,,2023-08-10 01:37:00,2023-08-10 01:37:00,0.308s,PASSED
+"verifyElementPresent(findTestObject(""PLPPage/facetes/TamanoTitleFacet_PLP""), 0)",Chrome 115.0.0.0,,,2023-08-10 01:37:00,2023-08-10 01:37:01,0.329s,PASSED
+"verifyElementPresent(findTestObject(""PLPPage/facetes/MarcasTitleFacet_PLP""), 0)",Chrome 115.0.0.0,,,2023-08-10 01:37:01,2023-08-10 01:37:01,0.546s,PASSED
+"verifyElementPresent(findTestObject(""PLPPage/facetes/VendidoTitleFacet_PLP""), 0)",Chrome 115.0.0.0,,,2023-08-10 01:37:01,2023-08-10 01:37:02,0.334s,PASSED
+"verifyElementPresent(findTestObject(""PLPPage/facetes/PreciosTitleFacet_PLP""), 0)",Chrome 115.0.0.0,,,2023-08-10 01:37:02,2023-08-10 01:37:02,0.313s,PASSED
+"verifyElementPresent(findTestObject(""PLPPage/facetes/ColorTitleFacet_PLP""), 0)",Chrome 115.0.0.0,,,2023-08-10 01:37:02,2023-08-10 01:37:02,0.305s,PASSED
+closeBrowser(),Chrome 115.0.0.0,,,2023-08-10 01:37:02,2023-08-10 01:37:03,0.794s,PASSED
+,,,,,,,
+Test Cases/Browse and Shop/TS_SMOKE_SUITE_048,Chrome 115.0.0.0,To verify the display of price range on the item listing page for multi sku items.,,2023-08-10 01:37:03,2023-08-10 01:38:28,1m - 24.909s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 01:37:03,2023-08-10 01:37:05,1.426s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 01:37:05,2023-08-10 01:37:49,44.454s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":""vaso""], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:37:49,2023-08-10 01:37:57,7.509s,PASSED
+"a = getText(findTestObject(""PLPPage/product1_cardPrice_PLP""))",Chrome 115.0.0.0,"verify price range
+",,2023-08-10 01:37:57,2023-08-10 01:38:28,31.256s,FAILED
+,,,,,,,
+Test Cases/Browse and Shop/TS_SMOKE_SUITE_049,Chrome 115.0.0.0,To verify the display of list price & sale price on the item listing page for single sku items.,,2023-08-10 01:38:28,2023-08-10 01:39:57,1m - 29.346s,PASSED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 01:38:28,2023-08-10 01:38:31,2.248s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 01:38:31,2023-08-10 01:39:17,46.573s,PASSED
+delay(5),Chrome 115.0.0.0,,,2023-08-10 01:39:17,2023-08-10 01:39:22,5.009s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":""jeans""], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:39:22,2023-08-10 01:39:29,6.707s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":""jeans""], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:39:29,2023-08-10 01:39:51,22.496s,PASSED
+"verifyElementVisible(findTestObject(""PLPPage/product1_cardPrice_PLP""))",Chrome 115.0.0.0,"verify selling price
+",,2023-08-10 01:39:51,2023-08-10 01:39:56,4.715s,PASSED
+"verifyElementVisible(findTestObject(""PLPPage/product1_discountPrice_PLP""))",Chrome 115.0.0.0,"verify listed price
+",,2023-08-10 01:39:56,2023-08-10 01:39:56,0.425s,PASSED
+closeBrowser(),Chrome 115.0.0.0,,,2023-08-10 01:39:56,2023-08-10 01:39:57,0.808s,PASSED
+,,,,,,,
+Test Cases/Browse and Shop/TS_SMOKE_SUITE_054,Chrome 115.0.0.0,To verify the display of product price on PDP page for single sku item.,,2023-08-10 01:39:57,2023-08-10 01:43:27,3m - 29.950s,PASSED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 01:39:58,2023-08-10 01:39:59,1.481s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 01:39:59,2023-08-10 01:40:48,49.399s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":""80282837""], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:40:48,2023-08-10 01:41:00,11.215s,PASSED
+"verifyElementNotPresent(findTestObject(""PDPPage/Colour2_PDP""), 0)",Chrome 115.0.0.0,"verify sku not present
+",,2023-08-10 01:41:00,2023-08-10 01:41:01,1.416s,PASSED
+"verifyElementNotPresent(findTestObject(""PDPPage/Size2_PDP""), 0)",Chrome 115.0.0.0,"verify sku not present
+",,2023-08-10 01:41:01,2023-08-10 01:41:01,0.318s,PASSED
+"verifyElementPresent(findTestObject(""PDPPage/discountPrice_PDP""), 0)",Chrome 115.0.0.0,"verify discount price present
+",,2023-08-10 01:41:01,2023-08-10 01:43:26,2m - 24.633s,PASSED
+"verifyElementPresent(findTestObject(""PDPPage/cardPrice_PDP""), 0)",Chrome 115.0.0.0,"verify card price present
+",,2023-08-10 01:43:26,2023-08-10 01:43:26,0.336s,PASSED
+closeBrowser(),Chrome 115.0.0.0,,,2023-08-10 01:43:26,2023-08-10 01:43:27,0.870s,PASSED
+,,,,,,,
+Test Cases/Browse and Shop/TS_SMOKE_SUITE_055,Chrome 115.0.0.0,To verify the display of product price range on PDP page for multi sku item.,,2023-08-10 01:43:27,2023-08-10 01:45:10,1m - 43.214s,PASSED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 01:43:27,2023-08-10 01:43:29,1.424s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 01:43:29,2023-08-10 01:44:16,47.280s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":""1002504924""], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:44:16,2023-08-10 01:44:23,7.012s,PASSED
+"verifyElementPresent(findTestObject(""PDPPage/Colour2_PDP""), 0)",Chrome 115.0.0.0,"verify milti sku
+",,2023-08-10 01:44:23,2023-08-10 01:45:09,46.080s,PASSED
+"verifyElementPresent(findTestObject(""PDPPage/minus(-)(priceRange)_PDP""), 0)",Chrome 115.0.0.0,"verify price range
+",,2023-08-10 01:45:09,2023-08-10 01:45:10,0.346s,PASSED
+closeBrowser(),Chrome 115.0.0.0,,,2023-08-10 01:45:10,2023-08-10 01:45:10,0.840s,PASSED
+,,,,,,,
+Test Cases/Browse and Shop/TS_SMOKE_SUITE_056,Chrome 115.0.0.0,To verify the display of PDP for single sku,,2023-08-10 01:45:10,2023-08-10 01:46:33,1m - 22.666s,PASSED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 01:45:11,2023-08-10 01:45:12,1.422s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 01:45:12,2023-08-10 01:45:57,44.817s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":""set""], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:45:57,2023-08-10 01:46:05,8.116s,PASSED
+a = a.GenerateRandomEmail.generateRandomEmail(),Chrome 115.0.0.0,,,2023-08-10 01:46:05,2023-08-10 01:46:05,0.225s,PASSED
+out.println(a),Chrome 115.0.0.0,,,2023-08-10 01:46:05,2023-08-10 01:46:05,0.015s,PASSED
+"click(findTestObject(""PLPPage/product1_PLP""))",Chrome 115.0.0.0,,,2023-08-10 01:46:05,2023-08-10 01:46:12,7.207s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/ProductName_PDP""))",Chrome 115.0.0.0,,,2023-08-10 01:46:12,2023-08-10 01:46:29,16.365s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/ProductID_pdp""))",Chrome 115.0.0.0,,,2023-08-10 01:46:29,2023-08-10 01:46:29,0.441s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/discountPrice_PDP""))",Chrome 115.0.0.0,,,2023-08-10 01:46:29,2023-08-10 01:46:31,1.320s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/Colour1_PDP""))",Chrome 115.0.0.0,,,2023-08-10 01:46:31,2023-08-10 01:46:31,0.321s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/Alternate_Img_pdp""))",Chrome 115.0.0.0,,,2023-08-10 01:46:31,2023-08-10 01:46:31,0.335s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/AddToCart_PDP""))",Chrome 115.0.0.0,,,2023-08-10 01:46:31,2023-08-10 01:46:32,0.359s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/Detail_PDP""))",Chrome 115.0.0.0,,,2023-08-10 01:46:32,2023-08-10 01:46:32,0.337s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/breadCrumb_pdp""))",Chrome 115.0.0.0,,,2023-08-10 01:46:32,2023-08-10 01:46:32,0.325s,PASSED
+closeBrowser(),Chrome 115.0.0.0,,,2023-08-10 01:46:32,2023-08-10 01:46:33,0.827s,PASSED
+,,,,,,,
+Test Cases/Browse and Shop/TS_SMOKE_SUITE_057,Chrome 115.0.0.0,To verify the display of PDP for multi  sku item,,2023-08-10 01:46:33,2023-08-10 01:51:46,5m - 12.483s,PASSED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 01:46:33,2023-08-10 01:46:35,1.409s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 01:46:35,2023-08-10 01:47:35,1m - 0.481s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":""mac""], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:47:35,2023-08-10 01:47:43,8.071s,PASSED
+delay(5),Chrome 115.0.0.0,,,2023-08-10 01:47:43,2023-08-10 01:47:48,5.005s,PASSED
+"click(findTestObject(""HomePage/Logo_hp""))",Chrome 115.0.0.0,,,2023-08-10 01:47:48,2023-08-10 01:49:01,1m - 12.240s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":""mac""], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:49:01,2023-08-10 01:49:12,11.145s,PASSED
+"click(findTestObject(""PLPPage/product1_PLP""))",Chrome 115.0.0.0,"verify price range
+",,2023-08-10 01:49:12,2023-08-10 01:49:18,6.244s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/discountPrice_PDP""))",Chrome 115.0.0.0,,,2023-08-10 01:49:18,2023-08-10 01:51:41,2m - 22.803s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/breadCrumb_pdp""))",Chrome 115.0.0.0,"
+",,2023-08-10 01:51:41,2023-08-10 01:51:41,0.381s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/Colour1_PDP""))",Chrome 115.0.0.0,,,2023-08-10 01:51:41,2023-08-10 01:51:42,0.363s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/Colour2_PDP""))",Chrome 115.0.0.0,,,2023-08-10 01:51:42,2023-08-10 01:51:43,1.202s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/AddToCart_PDP""))",Chrome 115.0.0.0,,,2023-08-10 01:51:43,2023-08-10 01:51:43,0.328s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/Alternate_Img_pdp""))",Chrome 115.0.0.0,,,2023-08-10 01:51:43,2023-08-10 01:51:43,0.327s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/Detail_PDP""))",Chrome 115.0.0.0,"
+",,2023-08-10 01:51:43,2023-08-10 01:51:44,0.327s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/ProductName_PDP""))",Chrome 115.0.0.0,"verify pdp price
+
+",,2023-08-10 01:51:44,2023-08-10 01:51:44,0.383s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/ProductID_pdp""))",Chrome 115.0.0.0,"verify pdp price
+
+",,2023-08-10 01:51:44,2023-08-10 01:51:44,0.338s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/Detail_PDP""))",Chrome 115.0.0.0,"verify pdp price
+
+",,2023-08-10 01:51:44,2023-08-10 01:51:45,0.328s,PASSED
+closeBrowser(),Chrome 115.0.0.0,,,2023-08-10 01:51:45,2023-08-10 01:51:46,0.838s,PASSED
+,,,,,,,
+Test Cases/Browse and Shop/TS_SMOKE_SUITE_058,Chrome 115.0.0.0,"To verify the display of Description slot in PDP with following tabs. 
+
+Long Description
+Manual
+Delivery Details
+Size/Dimensions
+LP Card Promotion
+Other Card Promotion",,2023-08-10 01:51:46,2023-08-10 01:53:45,1m - 59.591s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 01:51:46,2023-08-10 01:51:47,1.406s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 01:51:47,2023-08-10 01:52:32,44.653s,PASSED
+"callTestCase(findTestCase(""CommonMethods/login_odtaqab""), [:], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:52:32,2023-08-10 01:53:04,31.897s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":""1000719079""], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 01:53:04,2023-08-10 01:53:45,41.387s,FAILED

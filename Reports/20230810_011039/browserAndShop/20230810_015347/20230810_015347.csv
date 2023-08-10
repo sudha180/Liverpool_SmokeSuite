@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+browserAndShop,Chrome 115.0.0.0,,,2023-08-10 03:54:27,2023-08-10 03:58:50,4m - 22.891s,FAILED
+,,,,,,,
+Test Cases/Browse and Shop/TS_SMOKE_SUITE_048,Chrome 115.0.0.0,To verify the display of price range on the item listing page for multi sku items.,,2023-08-10 03:54:27,2023-08-10 03:55:55,1m - 28.148s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 03:54:28,2023-08-10 03:54:31,3.045s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 03:54:31,2023-08-10 03:55:15,44.571s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":""vaso""], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 03:55:15,2023-08-10 03:55:24,8.667s,PASSED
+"a = getText(findTestObject(""PLPPage/product1_cardPrice_PLP""))",Chrome 115.0.0.0,"verify price range
+",,2023-08-10 03:55:24,2023-08-10 03:55:55,31.301s,FAILED
+,,,,,,,
+Test Cases/Browse and Shop/TS_SMOKE_SUITE_058,Chrome 115.0.0.0,"To verify the display of Description slot in PDP with following tabs. 
+
+Long Description
+Manual
+Delivery Details
+Size/Dimensions
+LP Card Promotion
+Other Card Promotion",,2023-08-10 03:55:55,2023-08-10 03:58:50,2m - 54.300s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 03:55:56,2023-08-10 03:55:58,2.247s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 03:55:58,2023-08-10 03:56:42,43.771s,PASSED
+"callTestCase(findTestCase(""CommonMethods/login_odtaqab""), [:], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 03:56:42,2023-08-10 03:57:06,24.380s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":""1000719079""], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 03:57:06,2023-08-10 03:57:52,46.308s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/mas detalis(more detail)""))",Chrome 115.0.0.0,,,2023-08-10 03:57:52,2023-08-10 03:58:18,25.941s,PASSED
+"verifyElementClickable(findTestObject(""PDPPage/EDD_pdp""))",Chrome 115.0.0.0,,,2023-08-10 03:58:18,2023-08-10 03:58:50,31.380s,FAILED

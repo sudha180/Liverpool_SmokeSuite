@@ -1,0 +1,51 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ShopingCart,Chrome 115.0.0.0,,,2023-08-10 04:56:56,2023-08-10 05:11:33,14m - 36.476s,FAILED
+,,,,,,,
+Test Cases/ShoppingCart/TS_SMOKE_SUITE_026,Chrome 115.0.0.0,"To verify that for Anonymous user system display the Login overlay after clicking on the ""Pagar"" button during checkout",,2023-08-10 04:56:57,2023-08-10 05:00:07,3m - 9.867s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 04:56:57,2023-08-10 04:57:00,3.095s,PASSED
+navigateToUrl(LiverpoolURL),Chrome 115.0.0.0,,,2023-08-10 04:57:00,2023-08-10 04:57:48,47.959s,PASSED
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 04:57:48,2023-08-10 04:57:48,0.249s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":SL], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 04:57:48,2023-08-10 04:57:58,9.449s,PASSED
+"click(findTestObject(""HomePage/FirstProduct_plp""))",Chrome 115.0.0.0,,,2023-08-10 04:57:58,2023-08-10 04:59:21,1m - 22.791s,PASSED
+"click(findTestObject(""PDPPage/AddToCart_pdp""))",Chrome 115.0.0.0,,,2023-08-10 04:59:21,2023-08-10 04:59:35,14.330s,PASSED
+"click(findTestObject(""PLPPage/ProtectYourPurchase_plp""))",Chrome 115.0.0.0,,,2023-08-10 04:59:35,2023-08-10 05:00:07,31.522s,FAILED
+,,,,,,,
+Test Cases/ShoppingCart/TS_SMOKE_SUITE_027,Chrome 115.0.0.0,To verify that the user is able to create account from shopping cart page,,2023-08-10 05:00:07,2023-08-10 05:03:04,2m - 57.401s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 05:00:07,2023-08-10 05:00:09,2.293s,PASSED
+navigateToUrl(LiverpoolURL),Chrome 115.0.0.0,,,2023-08-10 05:00:09,2023-08-10 05:00:58,49.069s,PASSED
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 05:00:58,2023-08-10 05:00:58,0.223s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":SL], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 05:00:58,2023-08-10 05:01:05,7.073s,PASSED
+"click(findTestObject(""HomePage/FirstProduct_plp""))",Chrome 115.0.0.0,,,2023-08-10 05:01:05,2023-08-10 05:02:19,1m - 13.726s,PASSED
+"click(findTestObject(""PDPPage/AddToCart_pdp""))",Chrome 115.0.0.0,,,2023-08-10 05:02:19,2023-08-10 05:02:32,13.280s,PASSED
+"click(findTestObject(""PLPPage/ProtectYourPurchase_plp""))",Chrome 115.0.0.0,,,2023-08-10 05:02:32,2023-08-10 05:03:04,31.479s,FAILED
+,,,,,,,
+Test Cases/ShoppingCart/TS_SMOKE_SUITE_028,Chrome 115.0.0.0,To verify that user is able to login from Shopping Cart page,,2023-08-10 05:03:04,2023-08-10 05:05:02,1m - 58.330s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 05:03:04,2023-08-10 05:03:06,2.181s,PASSED
+navigateToUrl(LiverpoolURL),Chrome 115.0.0.0,,,2023-08-10 05:03:06,2023-08-10 05:03:49,42.541s,PASSED
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 05:03:49,2023-08-10 05:03:49,0.225s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":SL], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 05:03:49,2023-08-10 05:03:56,6.676s,PASSED
+"click(findTestObject(""HomePage/FirstProduct_plp""))",Chrome 115.0.0.0,,,2023-08-10 05:03:56,2023-08-10 05:04:06,10.351s,PASSED
+"click(findTestObject(""PDPPage/AddToCart_pdp""))",Chrome 115.0.0.0,,,2023-08-10 05:04:06,2023-08-10 05:04:31,24.650s,PASSED
+"click(findTestObject(""PLPPage/ProtectYourPurchase_plp""))",Chrome 115.0.0.0,,,2023-08-10 05:04:31,2023-08-10 05:05:02,31.421s,FAILED
+,,,,,,,
+Test Cases/ShoppingCart/TS_SMOKE_SUITE_029,Chrome 115.0.0.0,"To verify that the logged in user is navigated to  “One page Checkout"" by clicking on the  “Comprar"" button in the shopping cart page",,2023-08-10 05:05:02,2023-08-10 05:08:15,3m - 12.647s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 05:05:03,2023-08-10 05:05:05,2.197s,PASSED
+navigateToUrl(LiverpoolURL),Chrome 115.0.0.0,,,2023-08-10 05:05:05,2023-08-10 05:05:55,50.661s,PASSED
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 05:05:55,2023-08-10 05:05:56,0.226s,PASSED
+"click(findTestObject(""HomePage/Iniciar sesion""))",Chrome 115.0.0.0,,,2023-08-10 05:05:56,2023-08-10 05:05:57,0.955s,PASSED
+"callTestCase(findTestCase(""CommonMethods/loginFromHomePage""), [""username"":username, ""password"":password], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 05:05:57,2023-08-10 05:06:25,28.412s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":SLSearchTerm], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 05:06:25,2023-08-10 05:07:18,52.777s,PASSED
+"click(findTestObject(""HomePage/FirstProduct_plp""))",Chrome 115.0.0.0,,,2023-08-10 05:07:18,2023-08-10 05:07:33,15.192s,PASSED
+"click(findTestObject(""PDPPage/AddToCart_pdp""))",Chrome 115.0.0.0,,,2023-08-10 05:07:33,2023-08-10 05:07:43,10.445s,PASSED
+"click(findTestObject(""PLPPage/ProtectYourPurchase_plp""))",Chrome 115.0.0.0,,,2023-08-10 05:07:43,2023-08-10 05:08:15,31.457s,FAILED
+,,,,,,,
+Test Cases/ShoppingCart/TS_SMOKE_SUITE_030,Chrome 115.0.0.0,"To verify that the logged in user is navigated to  “One page Checkout"" by clicking on the  “Comprar Ahor"" button displayed for individual items in the shopping cart page",,2023-08-10 05:08:15,2023-08-10 05:11:33,3m - 17.827s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 05:08:15,2023-08-10 05:08:17,2.220s,PASSED
+navigateToUrl(LiverpoolURL),Chrome 115.0.0.0,,,2023-08-10 05:08:17,2023-08-10 05:09:10,52.497s,PASSED
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 05:09:10,2023-08-10 05:09:10,0.229s,PASSED
+"click(findTestObject(""HomePage/Iniciar sesion""))",Chrome 115.0.0.0,,,2023-08-10 05:09:10,2023-08-10 05:09:11,0.918s,PASSED
+"callTestCase(findTestCase(""CommonMethods/loginFromHomePage""), [""username"":username, ""password"":password], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 05:09:11,2023-08-10 05:09:30,18.646s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":SLSearchTerm], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 05:09:30,2023-08-10 05:10:34,1m - 4.572s,PASSED
+"click(findTestObject(""HomePage/FirstProduct_plp""))",Chrome 115.0.0.0,,,2023-08-10 05:10:34,2023-08-10 05:10:52,17.617s,PASSED
+"click(findTestObject(""PDPPage/AddToCart_pdp""))",Chrome 115.0.0.0,,,2023-08-10 05:10:52,2023-08-10 05:11:01,9.501s,PASSED
+"click(findTestObject(""PLPPage/ProtectYourPurchase_plp""))",Chrome 115.0.0.0,,,2023-08-10 05:11:01,2023-08-10 05:11:33,31.376s,FAILED

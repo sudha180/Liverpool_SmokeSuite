@@ -35,7 +35,7 @@ WebUI.setText(findTestObject('OPCPage/EnterCardAlias_OPC'), cardname)
 
 WebUI.setText(findTestObject('OPCPage/enterCardName_OPC'), 'vedant')
 
-WebUI.setText(findTestObject('OPCPage/enterCardExpire_OPC'), '12/24')
+WebUI.setText(findTestObject('OPCPage/enterCardExpire_OPC'), '12/26')
 
 WebUI.setText(findTestObject('OPCPage/enterCardCVV_OPC'), '123')
 

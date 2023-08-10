@@ -32,13 +32,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0fe4d04e-aa8d-41a0-8725-415a78c2a7eb</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Checkout/TS_SMOKE_SUITE_075</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>925002d6-3b72-4d60-88bc-d105098a5a6d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

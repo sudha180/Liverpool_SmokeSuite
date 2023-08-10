@@ -6,11 +6,11 @@
    <elementGuidId>84c7ec17-8d4c-4dca-b4fb-cb55048e2657</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@class='a-textField__input mdc-text-field__input'])[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//div[@class='o-addNewCardForm']//input[@class='a-textField__input mdc-text-field__input'])[4]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

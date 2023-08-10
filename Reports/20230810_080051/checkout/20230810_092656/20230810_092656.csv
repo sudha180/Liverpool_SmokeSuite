@@ -1,0 +1,114 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+checkout,Chrome 115.0.0.0,,,2023-08-10 09:27:02,2023-08-10 09:55:53,28m - 50.846s,FAILED
+,,,,,,,
+Test Cases/Checkout/TS_SMOKE_SUITE_072,Chrome 115.0.0.0,To verify the functionality of adding a new Personal shipping address in OPC flow for logged in user,,2023-08-10 09:27:03,2023-08-10 09:30:07,3m - 4.455s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 09:27:04,2023-08-10 09:27:08,3.908s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 09:27:08,2023-08-10 09:28:11,1m - 2.819s,PASSED
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 09:28:11,2023-08-10 09:28:11,0.339s,PASSED
+"click(findTestObject(""HomePage/Iniciar sesion""))",Chrome 115.0.0.0,,,2023-08-10 09:28:11,2023-08-10 09:28:12,1.481s,PASSED
+"callTestCase(findTestCase(""CommonMethods/login_odtaqab""), [:], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:28:12,2023-08-10 09:28:52,39.299s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":SLProduct], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:28:52,2023-08-10 09:29:36,44.345s,PASSED
+"click(findTestObject(""PDPPage/AddToCart_PDP""))",Chrome 115.0.0.0,,,2023-08-10 09:29:36,2023-08-10 09:30:07,31.356s,FAILED
+,,,,,,,
+Test Cases/Checkout/TS_SMOKE_SUITE_073,Chrome 115.0.0.0,To verify the functionality of editing the Personal shipping address  in checkout flow for logged in user,,2023-08-10 09:30:07,2023-08-10 09:34:17,4m - 9.998s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 09:30:08,2023-08-10 09:30:10,2.398s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 09:30:10,2023-08-10 09:31:04,53.287s,PASSED
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 09:31:04,2023-08-10 09:31:04,0.273s,PASSED
+"click(findTestObject(""HomePage/Iniciar sesion""))",Chrome 115.0.0.0,,,2023-08-10 09:31:04,2023-08-10 09:31:05,0.944s,PASSED
+"callTestCase(findTestCase(""CommonMethods/loginFromHomePage""), [""username"":Username, ""password"":Password], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:31:05,2023-08-10 09:31:44,38.881s,PASSED
+"callTestCase(findTestCase(""CommonMethods/EmptyCart_RunAt_HP""), [:], OPTIONAL)",Chrome 115.0.0.0,,,2023-08-10 09:31:44,2023-08-10 09:32:33,49.646s,PASSED
+"click(findTestObject(""HomePage/Logo_hp""))",Chrome 115.0.0.0,,,2023-08-10 09:32:33,2023-08-10 09:32:35,1.555s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":SLProduct], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:32:35,2023-08-10 09:32:42,6.961s,PASSED
+"click(findTestObject(""PLPPage/product1_PLP""), OPTIONAL)",Chrome 115.0.0.0,,,2023-08-10 09:32:42,2023-08-10 09:33:00,18.258s,PASSED
+"click(findTestObject(""PDPPage/AddToCart_PDP""))",Chrome 115.0.0.0,,,2023-08-10 09:33:00,2023-08-10 09:33:14,13.958s,PASSED
+"click(findTestObject(""HomePage/bag_header_HP""))",Chrome 115.0.0.0,,,2023-08-10 09:33:14,2023-08-10 09:33:18,3.928s,PASSED
+"click(findTestObject(""CartPage/BuyButton_Cart""))",Chrome 115.0.0.0,,,2023-08-10 09:33:18,2023-08-10 09:33:22,3.908s,PASSED
+"click(findTestObject(""OPCPage/ChangeAddress_Checkout""))",Chrome 115.0.0.0,,,2023-08-10 09:33:22,2023-08-10 09:33:34,12.464s,PASSED
+"click(findTestObject(""OPCPage/3DotButton2_Checkout""))",Chrome 115.0.0.0,,,2023-08-10 09:33:34,2023-08-10 09:33:37,2.308s,PASSED
+"click(findTestObject(""OPCPage/EditAddress_Checkout""))",Chrome 115.0.0.0,,,2023-08-10 09:33:37,2023-08-10 09:33:37,0.574s,PASSED
+"setText(findTestObject(""OPCPage/shortName_addAddress_opc""), ShortName)",Chrome 115.0.0.0,,,2023-08-10 09:33:37,2023-08-10 09:33:44,6.628s,PASSED
+"click(findTestObject(""OPCPage/ContinueButtonAddAddress_Checkout""))",Chrome 115.0.0.0,,,2023-08-10 09:33:44,2023-08-10 09:33:44,0.447s,PASSED
+"click(findTestObject(""HomePage/Logo_hp""))",Chrome 115.0.0.0,,,2023-08-10 09:33:44,2023-08-10 09:34:17,33.084s,FAILED
+,,,,,,,
+Test Cases/Checkout/TS_SMOKE_SUITE_077,Chrome 115.0.0.0,To verify the functionality of new  adding card  in checkout flow for logged in user,,2023-08-10 09:34:17,2023-08-10 09:37:36,3m - 18.745s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 09:34:18,2023-08-10 09:34:20,2.331s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 09:34:20,2023-08-10 09:35:07,47.061s,PASSED
+"navigateToUrl(""https://www.liverpool.com.mx/tienda/home"")",Chrome 115.0.0.0,,,2023-08-10 09:35:07,2023-08-10 09:35:07,0.002s,NOT_RUN
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 09:35:07,2023-08-10 09:35:08,0.250s,PASSED
+"click(findTestObject(""HomePage/Iniciar sesion""))",Chrome 115.0.0.0,,,2023-08-10 09:35:08,2023-08-10 09:35:09,0.992s,PASSED
+"callTestCase(findTestCase(""CommonMethods/loginFromHomePage""), [""username"":Username, ""password"":Password], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:35:09,2023-08-10 09:35:44,34.993s,PASSED
+"callTestCase(findTestCase(""CommonMethods/EmptyCart_RunAt_HP""), [:], OPTIONAL)",Chrome 115.0.0.0,,,2023-08-10 09:35:44,2023-08-10 09:36:26,42.913s,PASSED
+"click(findTestObject(""HomePage/Logo_hp""))",Chrome 115.0.0.0,,,2023-08-10 09:36:26,2023-08-10 09:36:28,1.067s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":SLProduct], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:36:28,2023-08-10 09:36:35,7.424s,PASSED
+"click(findTestObject(""PLPPage/product1_PLP""), OPTIONAL)",Chrome 115.0.0.0,,,2023-08-10 09:36:35,2023-08-10 09:36:52,17.360s,PASSED
+"click(findTestObject(""PDPPage/AddToCart_PDP""))",Chrome 115.0.0.0,,,2023-08-10 09:36:52,2023-08-10 09:37:03,10.850s,PASSED
+"click(findTestObject(""HomePage/bag_header_HP""))",Chrome 115.0.0.0,,,2023-08-10 09:37:03,2023-08-10 09:37:06,3.317s,PASSED
+"click(findTestObject(""CartPage/BuyButton_Cart""))",Chrome 115.0.0.0,,,2023-08-10 09:37:06,2023-08-10 09:37:09,2.782s,PASSED
+"callTestCase(findTestCase(""CommonMethods/create_new_CARD_OPC""), [:], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:37:09,2023-08-10 09:37:36,26.893s,FAILED
+,,,,,,,
+Test Cases/Checkout/TS_SMOKE_SUITE_078,Chrome 115.0.0.0,To verify the functionality of adding a new Personal shipping address in OPC flow for logged in user,,2023-08-10 09:37:36,2023-08-10 09:38:59,1m - 23.031s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 09:37:37,2023-08-10 09:37:39,2.283s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 09:37:39,2023-08-10 09:38:26,47.165s,PASSED
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 09:38:26,2023-08-10 09:38:26,0.281s,PASSED
+"click(findTestObject(""HomePage/Iniciar sesion""))",Chrome 115.0.0.0,,,2023-08-10 09:38:26,2023-08-10 09:38:27,0.893s,PASSED
+"callTestCase(findTestCase(""CommonMethods/login_odtaqab""), [:], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:38:27,2023-08-10 09:38:59,31.908s,FAILED
+,,,,,,,
+Test Cases/Checkout/TS_SMOKE_SUITE_080,Chrome 115.0.0.0,To verify that the display of the applied Coupon details in the order success page,,2023-08-10 09:38:59,2023-08-10 09:41:59,2m - 59.801s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 09:39:00,2023-08-10 09:39:02,2.400s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 09:39:02,2023-08-10 09:40:15,1m - 13.174s,PASSED
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 09:40:15,2023-08-10 09:40:15,0.224s,PASSED
+"click(findTestObject(""HomePage/Iniciar sesion""))",Chrome 115.0.0.0,,,2023-08-10 09:40:15,2023-08-10 09:40:16,1.000s,PASSED
+"callTestCase(findTestCase(""CommonMethods/login_odtaqab""), [:], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:40:16,2023-08-10 09:40:37,20.699s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":SLProduct], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:40:37,2023-08-10 09:41:28,50.677s,PASSED
+"click(findTestObject(""PDPPage/AddToCart_PDP""))",Chrome 115.0.0.0,,,2023-08-10 09:41:28,2023-08-10 09:41:59,31.235s,FAILED
+,,,,,,,
+Test Cases/Checkout/TS_SMOKE_SUITE_082,Chrome 115.0.0.0,To verify the functionality of   editing the card  in checkout flow for loggedin user,,2023-08-10 09:41:59,2023-08-10 09:45:31,3m - 31.512s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 09:41:59,2023-08-10 09:42:02,2.254s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 09:42:02,2023-08-10 09:43:02,1m - 0.015s,PASSED
+"navigateToUrl(""https://www.liverpool.com.mx/tienda/home"")",Chrome 115.0.0.0,,,2023-08-10 09:43:02,2023-08-10 09:43:02,0.001s,NOT_RUN
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 09:43:02,2023-08-10 09:43:02,0.220s,PASSED
+"click(findTestObject(""HomePage/Iniciar sesion""))",Chrome 115.0.0.0,,,2023-08-10 09:43:02,2023-08-10 09:43:03,0.923s,PASSED
+"callTestCase(findTestCase(""CommonMethods/loginFromHomePage""), [""username"":Username, ""password"":Password], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:43:03,2023-08-10 09:43:31,28.413s,PASSED
+"callTestCase(findTestCase(""CommonMethods/EmptyCart_RunAt_HP""), [:], OPTIONAL)",Chrome 115.0.0.0,,,2023-08-10 09:43:31,2023-08-10 09:44:11,40.165s,PASSED
+"click(findTestObject(""HomePage/Logo_hp""))",Chrome 115.0.0.0,,,2023-08-10 09:44:11,2023-08-10 09:44:13,1.573s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":SLProduct], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:44:13,2023-08-10 09:44:20,7.042s,PASSED
+"click(findTestObject(""PLPPage/product1_PLP""), OPTIONAL)",Chrome 115.0.0.0,,,2023-08-10 09:44:20,2023-08-10 09:44:38,17.915s,PASSED
+"click(findTestObject(""PDPPage/AddToCart_PDP""))",Chrome 115.0.0.0,,,2023-08-10 09:44:38,2023-08-10 09:44:55,17.212s,PASSED
+"click(findTestObject(""HomePage/bag_header_HP""))",Chrome 115.0.0.0,,,2023-08-10 09:44:55,2023-08-10 09:44:58,3.260s,PASSED
+"click(findTestObject(""CartPage/BuyButton_Cart""))",Chrome 115.0.0.0,,,2023-08-10 09:44:58,2023-08-10 09:45:00,2.145s,PASSED
+"callTestCase(findTestCase(""CommonMethods/create_new_CARD_OPC""), [:], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:45:00,2023-08-10 09:45:31,30.071s,FAILED
+,,,,,,,
+Test Cases/Checkout/TS_SMOKE_SUITE_083,Chrome 115.0.0.0,To verify the functionality of adding a new Personal shipping address in OPC flow for logged in user,,2023-08-10 09:45:31,2023-08-10 09:48:18,2m - 47.545s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 09:45:31,2023-08-10 09:45:33,2.189s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 09:45:33,2023-08-10 09:46:19,46.105s,PASSED
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 09:46:19,2023-08-10 09:46:19,0.184s,PASSED
+"click(findTestObject(""HomePage/Iniciar sesion""))",Chrome 115.0.0.0,,,2023-08-10 09:46:19,2023-08-10 09:46:20,1.018s,PASSED
+"callTestCase(findTestCase(""CommonMethods/login_odtaqab""), [:], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:46:20,2023-08-10 09:47:01,40.468s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":SLProduct], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:47:01,2023-08-10 09:47:47,45.819s,PASSED
+"click(findTestObject(""PDPPage/AddToCart_PDP""))",Chrome 115.0.0.0,,,2023-08-10 09:47:47,2023-08-10 09:48:18,31.446s,FAILED
+,,,,,,,
+Test Cases/Checkout/TS_SMOKE_SUITE_086,Chrome 115.0.0.0,To verify the functionality of adding a new Personal shipping address in OPC flow for logged in user,,2023-08-10 09:48:18,2023-08-10 09:51:14,2m - 56.333s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 09:48:18,2023-08-10 09:48:21,2.167s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 09:48:21,2023-08-10 09:49:00,39.908s,PASSED
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 09:49:00,2023-08-10 09:49:01,0.409s,PASSED
+"click(findTestObject(""HomePage/Iniciar sesion""))",Chrome 115.0.0.0,,,2023-08-10 09:49:01,2023-08-10 09:49:02,0.816s,PASSED
+"callTestCase(findTestCase(""CommonMethods/login_odtaqab""), [:], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:49:02,2023-08-10 09:49:31,29.712s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":SLProduct], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:49:31,2023-08-10 09:50:43,1m - 11.644s,PASSED
+"click(findTestObject(""PDPPage/AddToCart_PDP""))",Chrome 115.0.0.0,,,2023-08-10 09:50:43,2023-08-10 09:51:14,31.383s,FAILED
+,,,,,,,
+Test Cases/Checkout/TS_SMOKE_SUITE_087,Chrome 115.0.0.0,To verify the functionality of adding a new Personal shipping address in OPC flow for logged in user,,2023-08-10 09:51:14,2023-08-10 09:53:37,2m - 22.895s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 09:51:15,2023-08-10 09:51:17,2.237s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 09:51:17,2023-08-10 09:52:02,44.668s,PASSED
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 09:52:02,2023-08-10 09:52:02,0.225s,PASSED
+"click(findTestObject(""HomePage/Iniciar sesion""))",Chrome 115.0.0.0,,,2023-08-10 09:52:02,2023-08-10 09:52:03,0.951s,PASSED
+"callTestCase(findTestCase(""CommonMethods/login_odtaqab""), [:], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:52:03,2023-08-10 09:52:23,19.947s,PASSED
+"callTestCase(findTestCase(""CommonMethods/SearchForAProduct_search""), [""searchTerm"":SLProduct], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:52:23,2023-08-10 09:53:06,43.237s,PASSED
+"click(findTestObject(""PDPPage/AddToCart_PDP""))",Chrome 115.0.0.0,,,2023-08-10 09:53:06,2023-08-10 09:53:37,31.303s,FAILED
+,,,,,,,
+Test Cases/Checkout/TS_SMOKE_SUITE_088,Chrome 115.0.0.0,To verify the functionality of adding a new Personal shipping address in OPC flow for logged in user,,2023-08-10 09:53:37,2023-08-10 09:55:53,2m - 15.834s,FAILED
+"openBrowser("""")",Chrome 115.0.0.0,,,2023-08-10 09:53:38,2023-08-10 09:53:40,2.248s,PASSED
+navigateToUrl(url),Chrome 115.0.0.0,,,2023-08-10 09:53:40,2023-08-10 09:54:23,43.355s,PASSED
+maximizeWindow(),Chrome 115.0.0.0,,,2023-08-10 09:54:23,2023-08-10 09:54:23,0.183s,PASSED
+"click(findTestObject(""HomePage/Iniciar sesion""))",Chrome 115.0.0.0,,,2023-08-10 09:54:23,2023-08-10 09:54:24,1.031s,PASSED
+"callTestCase(findTestCase(""CommonMethods/login_odtaqab""), [:], STOP_ON_FAILURE)",Chrome 115.0.0.0,,,2023-08-10 09:54:24,2023-08-10 09:55:11,47.016s,PASSED
+"click(findTestObject(""HomePage/header_Hola_text_HP""))",Chrome 115.0.0.0,,,2023-08-10 09:55:11,2023-08-10 09:55:53,41.712s,FAILED

@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://odtaqaa.liverpool.com.mx/tienda/home'</initValue>
+      <initValue>'https://odtaqab.liverpool.com.mx/tienda/home'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -101,7 +101,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'25048300'</initValue>
+      <initValue>'vaso'</initValue>
       <name>SLProduct</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

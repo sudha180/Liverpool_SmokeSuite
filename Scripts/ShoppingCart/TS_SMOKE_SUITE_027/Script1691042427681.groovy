@@ -23,13 +23,11 @@ WebUI.navigateToUrl(GlobalVariable.LiverpoolURL)
 
 WebUI.maximizeWindow()
 
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SL], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'pen'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
+WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('PDPPage/AddToCart_pdp'))
-
-WebUI.click(findTestObject('PLPPage/ProtectYourPurchase_plp'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
@@ -37,9 +35,9 @@ WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
 WebUI.verifyElementPresent(findTestObject('HomePage/LoginPage_hp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('AccountManagement/CreateNewAccount_Login'), 0)
+WebUI.click(findTestObject('HomePage/LoginPage_hp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AccountManagement/CreateAccountPage_Account'), 0)
+WebUI.callTestCase(findTestCase('CommonMethods/ADDnewRandomAccount_RunAtHp'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

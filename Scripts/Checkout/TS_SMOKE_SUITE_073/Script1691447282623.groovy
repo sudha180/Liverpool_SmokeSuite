@@ -49,7 +49,7 @@ WebUI.click(findTestObject('OPCPage/3DotButton2_Checkout'))
 
 WebUI.click(findTestObject('OPCPage/EditAddress_Checkout'))
 
-WebUI.setText(findTestObject('OPCPage/shortName_addAddress_opc'), GlobalVariable.ShortName)
+WebUI.callTestCase(findTestCase('CommonMethods/addAddress_fillform_opc'), [('StoreValue') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('OPCPage/ContinueButtonAddAddress_Checkout'))
 

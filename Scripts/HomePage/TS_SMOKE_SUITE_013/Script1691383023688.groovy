@@ -43,3 +43,5 @@ WebUI.click(findTestObject('HomePage/loginpage/hombre_radioButton_LP'), FailureH
 
 WebUI.click(findTestObject('HomePage/loginpage/createAccount_button_LP'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.closeBrowser()
+

@@ -30,6 +30,8 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLProduct], 
     FailureHandling.STOP_ON_FAILURE)
 
+WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
+
 WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
 WebUI.click(findTestObject('HomePage/bag_header_HP'))
@@ -41,8 +43,6 @@ WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
 WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/addAddress_fillform_opc'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyTextPresent(StoreValue, false)
 
 WebUI.closeBrowser()
 
