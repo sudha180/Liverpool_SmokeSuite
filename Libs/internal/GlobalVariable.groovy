@@ -465,12 +465,17 @@ Profile default : pwaqa</p>
      */
     public static Object SL
      
+    /**
+     * <p></p>
+     */
+    public static Object AddressshortName
+     
 
     static {
         try {
             def selectedVariables = TestCaseMain.getGlobalVariables("default")
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
-            selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters())
+            selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters(), selectedVariables)
     
             url = selectedVariables['url']
             newuser = selectedVariables['newuser']
@@ -563,6 +568,7 @@ Profile default : pwaqa</p>
             LiverpoolURL = selectedVariables['LiverpoolURL']
             CheckoutLink = selectedVariables['CheckoutLink']
             SL = selectedVariables['SL']
+            AddressshortName = selectedVariables['AddressshortName']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

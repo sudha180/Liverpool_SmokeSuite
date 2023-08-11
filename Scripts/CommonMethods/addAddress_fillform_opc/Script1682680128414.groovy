@@ -22,11 +22,13 @@ String StoreValue = 'AUTOMATION' + RandomStringUtils.randomAlphabetic(8)
 
 System.out.println(StoreValue)
 
+GlobalVariable.AddressshortName = StoreValue
 WebUI.setText(findTestObject('OPCPage/shortName_addAddress_opc'), StoreValue)
 
 WebUI.setText(findTestObject('OPCPage/mothersLastName_addAddress_opc'), GlobalVariable.MotherName)
 
 WebUI.setText(findTestObject('OPCPage/postalCode_addAddress_opc'), GlobalVariable.PostalCode)
+WebUI.delay(3)
 
 WebUI.setText(findTestObject('OPCPage/city_addAddress_opc'), GlobalVariable.CityAddAddress)
 

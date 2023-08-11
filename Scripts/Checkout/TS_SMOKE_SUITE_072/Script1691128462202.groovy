@@ -19,29 +19,29 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.LiverpoolURL)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('HomePage/Iniciar sesion'))
 
-WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.username, ('password') : GlobalVariable.password], 
+WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLProduct], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLSearchTerm], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
-
-WebUI.click(findTestObject('PDPPage/AddToCart_pdp'))
-
-WebUI.click(findTestObject('PLPPage/ProtectYourPurchase_plp'))
-
-WebUI.click(findTestObject('HomePage/Cart_header'))
+WebUI.click(findTestObject('HomePage/bag_header_HP'))
 
 WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
 WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
 
-WebUI.click(findTestObject('OPCPage/SelectAddressRadioButton_Checkout'))
+WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'))
 
+WebUI.callTestCase(findTestCase('CommonMethods/addAddress_fillform_opc'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyTextPresent(GlobalVariable.AddressshortName, false)
+
+WebUI.closeBrowser()

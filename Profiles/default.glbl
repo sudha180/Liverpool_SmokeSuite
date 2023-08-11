@@ -469,4 +469,9 @@
       <initValue>'MAC'</initValue>
       <name>SL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>AddressshortName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
