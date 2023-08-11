@@ -36,3 +36,5 @@ WebUI.click(findTestObject('AccountManagement/MyPaymentMethod_Account'))
 
 WebUI.verifyElementPresent(findTestObject('AccountManagement/PaymentMethodsSection_Account'), 0)
 
+WebUI.closeBrowser()
+

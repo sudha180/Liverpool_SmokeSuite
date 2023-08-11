@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
 
@@ -37,24 +37,23 @@ WebUI.click(findTestObject('AccountManagement/UpdatePeronalData_Account'))
 
 WebUI.verifyElementPresent(findTestObject('AccountManagement/updatePage_Account'), 0)
 
-name = CustomKeywords.'customkeywords.myKeywords.randomString'()
+String name = CustomKeywords.'customkeywords.myKeywords.randomString'()
 
-WebUI.setText(findTestObject('AccountManagement/UpdatePeronalData_Account'), name)
+WebUI.setText(findTestObject('AccountManagement/FirstNameProfile_Account'), name)
 
 lastname = WebUI.getText(findTestObject('AccountManagement/LastName_Account'))
 
-accountname = name + lastname
+accountname = (name + lastname)
 
 WebUI.click(findTestObject('AccountManagement/UpdateButton_Account'))
 
 fnamelname = WebUI.getText(findTestObject('AccountManagement/PersonalDataName_Account'))
 
-if(fnamelname == accountname)
-{
-	println('Checked')
+if (fnamelname == accountname) {
+    println('Checked')
+} else {
+    KeywordUtil.markFailed('Name is not updated !')
 }
-else {
-	KeywordUtil.markFailed('Name is not updated !')
-}
+
 WebUI.closeBrowser()
 

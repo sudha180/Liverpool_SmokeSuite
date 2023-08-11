@@ -193,10 +193,11 @@ class myKeywords {
 	}
 	@Keyword
 	def randomString() {
-		String charset = (('A'..'Z') + ('0'..'9')).join()
-		Integer length = 9
-		String randomString = RandomStringUtils.random(length, charset.toCharArray())
-		KeywordUtil.logInfo(randomString)
+		//		String charset = (('A'..'Z') + ('0'..'9')).join()
+		//		Integer length = 9
+		//		String randomString = RandomStringUtils.random(length, charset.toCharArray())
+		String generatedstring=RandomStringUtils.randomAlphabetic(8)
+		KeywordUtil.logInfo(generatedstring)
 	}
 	@Keyword
 	def removeDollar(String withDollarprice) {

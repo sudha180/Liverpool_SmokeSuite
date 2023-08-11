@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SelectAddressRadioButton_Account</name>
+   <name>AddAdressPersonal_Account</name>
    <tag></tag>
-   <elementGuidId>a6ee5464-8aa8-4979-9b9d-33eeb60026cf</elementGuidId>
+   <elementGuidId>0fa7e97b-d12c-4dd1-a62b-7198696c5780</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@name='storeSelection'])[10]</value>
+         <value>//button[contains(text(), 'Agregar dirección')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

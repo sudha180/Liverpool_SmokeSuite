@@ -42,3 +42,5 @@ WebUI.click(findTestObject('AccountManagement/MakeCardAsDefault_Account'))
 
 WebUI.verifyElementPresent(findTestObject('AccountManagement/DefaultCard_Account'), 0)
 
+WebUI.closeBrowser()
+
