@@ -39,11 +39,21 @@ WebUI.verifyElementPresent(findTestObject('AccountManagement/updatePage_Account'
 
 String name = CustomKeywords.'customkeywords.myKeywords.randomString'()
 
+WebUI.click(findTestObject('AccountManagement/FirstNameProfile_Account'))
+//WebUI.clearText(findTestObject('AccountManagement/FirstNameProfile_Account'))
+fname = WebUI.getText(findTestObject('AccountManagement/FirstNameProfile_Account'))
+int n = fname.length()
+for(int i=0; i<=n; i++) {
+	WebUI.sendKeys(findTestObject('AccountManagement/FirstNameProfile_Account'), Keys.chord(Keys.BACK_SPACE))
+}
+
+WebUI.delay(5)
+
 WebUI.setText(findTestObject('AccountManagement/FirstNameProfile_Account'), name)
 
 lastname = WebUI.getText(findTestObject('AccountManagement/LastName_Account'))
 
-accountname = (name + lastname)
+accountname = (name + " " +lastname)
 
 WebUI.click(findTestObject('AccountManagement/UpdateButton_Account'))
 
@@ -54,6 +64,4 @@ if (fnamelname == accountname) {
 } else {
     KeywordUtil.markFailed('Name is not updated !')
 }
-
-WebUI.closeBrowser()
 

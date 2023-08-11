@@ -92,17 +92,12 @@ def static "customkeywords.myKeywords.generateRandomEmail"() {
     (new customkeywords.myKeywords()).generateRandomEmail()
 }
 
- /**
-	 * Refresh browser
-	 */ 
+
 def static "customkeywords.myKeywords.refreshBrowser"() {
     (new customkeywords.myKeywords()).refreshBrowser()
 }
 
- /**
-	 * Click element
-	 * @param to Katalon test object
-	 */ 
+
 def static "customkeywords.myKeywords.clickElement"(
     	TestObject to	) {
     (new customkeywords.myKeywords()).clickElement(
@@ -116,12 +111,7 @@ def static "customkeywords.myKeywords.clickElementWithoutScroll"(
         	to)
 }
 
- /**
-	 * Get all rows of HTML table
-	 * @param table Katalon test object represent for HTML table
-	 * @param outerTagName outer tag name of TR tag, usually is TBODY
-	 * @return All rows inside HTML table
-	 */ 
+
 def static "customkeywords.myKeywords.getHtmlTableRows"(
     	TestObject table	
      , 	String outerTagName	) {

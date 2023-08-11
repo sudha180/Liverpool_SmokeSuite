@@ -198,6 +198,7 @@ class myKeywords {
 		//		String randomString = RandomStringUtils.random(length, charset.toCharArray())
 		String generatedstring=RandomStringUtils.randomAlphabetic(8)
 		KeywordUtil.logInfo(generatedstring)
+		return generatedstring
 	}
 	@Keyword
 	def removeDollar(String withDollarprice) {
