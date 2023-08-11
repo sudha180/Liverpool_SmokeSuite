@@ -37,11 +37,17 @@ WebUI.click(findTestObject('AccountManagement/DeliveryAddress_Account'))
 
 WebUI.click(findTestObject('AccountManagement/ClickAndCollectStores_accounts'))
 
+WebUI.click(findTestObject('AccountManagement/AddClickNCollectionAddress_Account'))
+
 WebUI.click(findTestObject('AccountManagement/SelectStateClickNCollection_Account'))
 
 WebUI.click(findTestObject('AccountManagement/StateOptionClickNCollection_Account'))
 
+WebUI.click(findTestObject('AccountManagement/SelectAddressRadioButton_Account'))
+
 StoreAddress = WebUI.getText(findTestObject('AccountManagement/StoreNameClickNCollection_Account'))
+
+WebUI.scrollToElement(findTestObject('AccountManagement/KeepButtonClickNCollection_Account'), 0)
 
 WebUI.click(findTestObject('AccountManagement/KeepButtonClickNCollection_Account'))
 
@@ -51,9 +57,7 @@ address = WebUI.getText(findTestObject('AccountManagement/ClickNCollectionFirstA
 
 if (StoreAddress == address) {
     println('Address is Added !')
-} 
-else 
-	{
+} else {
     KeywordUtil.markFailed('Address is not Added !')
 }
 
