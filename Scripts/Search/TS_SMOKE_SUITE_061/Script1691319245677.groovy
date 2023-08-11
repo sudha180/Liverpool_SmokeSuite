@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
-import com.kms.katalon.core.util.KeywordUtil
 
 WebUI.openBrowser('')
 
@@ -37,7 +36,13 @@ System.out.println(a1)
 
 boolean a = a1.contains('page-2')
 
+System.out.println(a)
+
+WebUI.acceptAlert()
+
 WebUI.scrollToElement(findTestObject('PLPPage/pagenation_1_PLP'), 0)
+
+WebUI.scrollToPosition(450, 0)
 
 WebUI.delay(10)
 
