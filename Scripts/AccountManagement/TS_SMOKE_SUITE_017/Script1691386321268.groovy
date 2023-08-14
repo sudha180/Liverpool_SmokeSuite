@@ -16,11 +16,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.LiverpoolURL)
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
@@ -35,7 +35,7 @@ WebUI.click(findTestObject('AccountManagement/MyAccountButton_Account'))
 
 WebUI.click(findTestObject('AccountManagement/DeliveryAddress_Account'))
 
-WebUI.click(findTestObject('Checkout/AddAddressButtonPopup_checkout'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SaveAddress_AccountManagment'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -43,13 +43,11 @@ WebUI.click(findTestObject('AccountManagement/KeepButtonClickNCollection_Account
 
 address = WebUI.getText(findTestObject('AccountManagement/FirstPersonalShippingAddress_Account'), FailureHandling.STOP_ON_FAILURE)
 
-if(GlobalVariable.TempAddress == address)
-{
-	println('Address is Added!')
+if (GlobalVariable.TempAddress == address) {
+    println('Address is Added!')
+} else {
+    KeywordUtil.markFailed('Address is not Added !')
 }
-else 
-{
-	KeywordUtil.markFailed('Address is not Added !')
-}
+
 WebUI.closeBrowser()
 

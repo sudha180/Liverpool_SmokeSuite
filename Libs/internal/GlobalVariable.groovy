@@ -17,7 +17,7 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object newuser
+    public static Object SLProduct
      
     /**
      * <p></p>
@@ -28,6 +28,16 @@ public class GlobalVariable {
      * <p></p>
      */
     public static Object password
+     
+    /**
+     * <p></p>
+     */
+    public static Object URL
+     
+    /**
+     * <p></p>
+     */
+    public static Object newuser
      
     /**
      * <p>Profile default : pwaqa
@@ -59,11 +69,6 @@ Profile default : pwaqa</p>
      * <p>Profile default : digital product </p>
      */
     public static Object digitalP
-     
-    /**
-     * <p></p>
-     */
-    public static Object CartPageURL
      
     /**
      * <p></p>
@@ -108,11 +113,6 @@ Profile default : pwaqa</p>
     /**
      * <p></p>
      */
-    public static Object SLProduct
-     
-    /**
-     * <p></p>
-     */
     public static Object collectionItemLink
      
     /**
@@ -134,11 +134,6 @@ Profile default : pwaqa</p>
      * <p></p>
      */
     public static Object MKPProductLink
-     
-    /**
-     * <p></p>
-     */
-    public static Object LiverpoolProduction
      
     /**
      * <p></p>
@@ -301,16 +296,6 @@ Profile default : pwaqa</p>
     public static Object gwpParentSLwithMultipleSLGifts
      
     /**
-     * <p></p>
-     */
-    public static Object prodURL
-     
-    /**
-     * <p></p>
-     */
-    public static Object URL
-     
-    /**
      * <p>Profile default : GWP BT with 2 gift</p>
      */
     public static Object bt1gift2
@@ -443,21 +428,6 @@ Profile default : pwaqa</p>
     /**
      * <p></p>
      */
-    public static Object Url
-     
-    /**
-     * <p></p>
-     */
-    public static Object URLab
-     
-    /**
-     * <p></p>
-     */
-    public static Object LiverpoolURL
-     
-    /**
-     * <p></p>
-     */
     public static Object CheckoutLink
      
     /**
@@ -478,16 +448,17 @@ Profile default : pwaqa</p>
             selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters())
     
             url = selectedVariables['url']
-            newuser = selectedVariables['newuser']
+            SLProduct = selectedVariables['SLProduct']
             username = selectedVariables['username']
             password = selectedVariables['password']
+            URL = selectedVariables['URL']
+            newuser = selectedVariables['newuser']
             GIDcollection = selectedVariables['GIDcollection']
             username1 = selectedVariables['username1']
             password1 = selectedVariables['password1']
             newUser = selectedVariables['newUser']
             newpassword = selectedVariables['newpassword']
             digitalP = selectedVariables['digitalP']
-            CartPageURL = selectedVariables['CartPageURL']
             WrongUsername = selectedVariables['WrongUsername']
             WrongPassword = selectedVariables['WrongPassword']
             Username = selectedVariables['Username']
@@ -496,13 +467,11 @@ Profile default : pwaqa</p>
             BTSearchTerms = selectedVariables['BTSearchTerms']
             GWPProduct = selectedVariables['GWPProduct']
             MKPProduct = selectedVariables['MKPProduct']
-            SLProduct = selectedVariables['SLProduct']
             collectionItemLink = selectedVariables['collectionItemLink']
             BTItemsLink = selectedVariables['BTItemsLink']
             GWPProductLink = selectedVariables['GWPProductLink']
             DigitalItem = selectedVariables['DigitalItem']
             MKPProductLink = selectedVariables['MKPProductLink']
-            LiverpoolProduction = selectedVariables['LiverpoolProduction']
             UsernameProduction = selectedVariables['UsernameProduction']
             PasswordProduction = selectedVariables['PasswordProduction']
             SLSearchTerm = selectedVariables['SLSearchTerm']
@@ -535,8 +504,6 @@ Profile default : pwaqa</p>
             gwpParentSLandGiftBTbothOOS = selectedVariables['gwpParentSLandGiftBTbothOOS']
             gwpParentBTgiftSL = selectedVariables['gwpParentBTgiftSL']
             gwpParentSLwithMultipleSLGifts = selectedVariables['gwpParentSLwithMultipleSLGifts']
-            prodURL = selectedVariables['prodURL']
-            URL = selectedVariables['URL']
             bt1gift2 = selectedVariables['bt1gift2']
             GID = selectedVariables['GID']
             Softline = selectedVariables['Softline']
@@ -563,9 +530,6 @@ Profile default : pwaqa</p>
             bundleItem = selectedVariables['bundleItem']
             GRuser = selectedVariables['GRuser']
             GRpassword = selectedVariables['GRpassword']
-            Url = selectedVariables['Url']
-            URLab = selectedVariables['URLab']
-            LiverpoolURL = selectedVariables['LiverpoolURL']
             CheckoutLink = selectedVariables['CheckoutLink']
             SL = selectedVariables['SL']
             AddressshortName = selectedVariables['AddressshortName']

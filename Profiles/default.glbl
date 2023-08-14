@@ -3,11 +3,11 @@
    <description></description>
    <name>default</name>
    <tag></tag>
-   <defaultProfile>true</defaultProfile>
+   <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://odtaqaa.liverpool.com.mx/tienda/home'</initValue>
-      <name>url</name>
+      <name>URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -53,11 +53,6 @@
       <description>digital product </description>
       <initValue>'1031144554'</initValue>
       <name>digitalP</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'https://odtaqab.liverpool.com.mx/tienda/cart'</initValue>
-      <name>CartPageURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -128,11 +123,6 @@
       <description></description>
       <initValue>'https://odtaqab.liverpool.com.mx/tienda/jeans/cat660085'</initValue>
       <name>MKPProductLink</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'https://www.liverpool.com.mx/tienda/home'</initValue>
-      <name>LiverpoolProduction</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -295,16 +285,6 @@
       <name>gwpParentSLwithMultipleSLGifts</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'https://www.liverpool.com.mx/tienda/home'</initValue>
-      <name>prodURL</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'https://dtaqa.liverpool.com.mx/tienda/home'</initValue>
-      <name>URL</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
       <description>pwaqa</description>
       <initValue>'https://pwaqa.liverpool.com.mx/tienda/group/elvis-set-sala-contempor%C3%A1nea-gris/100000000147?skuid=100000000147'</initValue>
       <name>GIDcollection</name>
@@ -443,21 +423,6 @@
       <description></description>
       <initValue>'test12345'</initValue>
       <name>GRpassword</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'https://odtaqab.liverpool.com.mx/tienda/pdp/telefono-fijo/1007253555'</initValue>
-      <name>Url</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'https://odtaqab.liverpool.com.mx/tienda/home'</initValue>
-      <name>URLab</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'https://odtaqab.liverpool.com.mx/'</initValue>
-      <name>LiverpoolURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

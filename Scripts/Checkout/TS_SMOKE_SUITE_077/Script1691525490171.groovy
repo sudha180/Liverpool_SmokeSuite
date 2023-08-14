@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.url)
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 not_run: WebUI.navigateToUrl('https://www.liverpool.com.mx/tienda/home')
 

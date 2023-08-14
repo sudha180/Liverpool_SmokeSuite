@@ -6,12 +6,11 @@
    <elementGuidId>87d43856-94be-46a8-adb8-419cece1215c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[@class='a-header__topLink popover-session']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//span[@class='a-header__topLink']/..</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
