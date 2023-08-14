@@ -16,11 +16,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.LiverpoolURL)
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
@@ -28,6 +28,8 @@ WebUI.click(findTestObject('HomePage/Iniciar sesion'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.username, ('password') : GlobalVariable.password], 
     FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
 
 WebUI.mouseOver(findTestObject('HomePage/AfterLogin_Homepage'))
 
@@ -43,18 +45,17 @@ WebUI.setText(findTestObject('AccountManagement/UpdatePeronalData_Account'), nam
 
 lastname = WebUI.getText(findTestObject('AccountManagement/LastName_Account'))
 
-accountname = name + lastname
+accountname = (name + lastname)
 
 WebUI.click(findTestObject('AccountManagement/UpdateButton_Account'))
 
 fnamelname = WebUI.getText(findTestObject('AccountManagement/PersonalDataName_Account'))
 
-if(fnamelname == accountname)
-{
-	println('Checked')
+if (fnamelname == accountname) {
+    println('Checked')
+} else {
+    KeywordUtil.markFailed('Name is not updated !')
 }
-else {
-	KeywordUtil.markFailed('Name is not updated !')
-}
+
 WebUI.closeBrowser()
 

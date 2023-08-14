@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.url)
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.mouseOver(findTestObject('HomePage/Departamentos'), FailureHandling.STOP_ON_FAILURE)
 
@@ -27,7 +27,7 @@ WebUI.click(findTestObject('HomePage/L1_Category1_HP'), FailureHandling.STOP_ON_
 
 WebUI.click(findTestObject('CLPPage/SubCategory2_leftmenu_CLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('CLPPage/SubCategory3_leftmenu_CLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementClickable(findTestObject('CLPPage/breadCrumb_clp'))
 

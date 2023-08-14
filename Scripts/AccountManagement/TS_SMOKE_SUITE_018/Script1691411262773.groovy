@@ -20,7 +20,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.LiverpoolURL)
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
@@ -51,9 +51,7 @@ address = WebUI.getText(findTestObject('AccountManagement/ClickNCollectionFirstA
 
 if (StoreAddress == address) {
     println('Address is Added !')
-} 
-else 
-	{
+} else {
     KeywordUtil.markFailed('Address is not Added !')
 }
 

@@ -12,7 +12,7 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object url
+    public static Object URL
      
     /**
      * <p></p>
@@ -59,11 +59,6 @@ Profile default : pwaqa</p>
      * <p>Profile default : digital product </p>
      */
     public static Object digitalP
-     
-    /**
-     * <p></p>
-     */
-    public static Object CartPageURL
      
     /**
      * <p></p>
@@ -134,11 +129,6 @@ Profile default : pwaqa</p>
      * <p></p>
      */
     public static Object MKPProductLink
-     
-    /**
-     * <p></p>
-     */
-    public static Object LiverpoolProduction
      
     /**
      * <p></p>
@@ -301,16 +291,6 @@ Profile default : pwaqa</p>
     public static Object gwpParentSLwithMultipleSLGifts
      
     /**
-     * <p></p>
-     */
-    public static Object prodURL
-     
-    /**
-     * <p></p>
-     */
-    public static Object URL
-     
-    /**
      * <p>Profile default : GWP BT with 2 gift</p>
      */
     public static Object bt1gift2
@@ -443,27 +423,17 @@ Profile default : pwaqa</p>
     /**
      * <p></p>
      */
-    public static Object Url
-     
-    /**
-     * <p></p>
-     */
-    public static Object URLab
-     
-    /**
-     * <p></p>
-     */
-    public static Object LiverpoolURL
-     
-    /**
-     * <p></p>
-     */
     public static Object CheckoutLink
      
     /**
      * <p></p>
      */
     public static Object SL
+     
+    /**
+     * <p></p>
+     */
+    public static Object url
      
 
     static {
@@ -472,7 +442,7 @@ Profile default : pwaqa</p>
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
             selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters())
     
-            url = selectedVariables['url']
+            URL = selectedVariables['URL']
             newuser = selectedVariables['newuser']
             username = selectedVariables['username']
             password = selectedVariables['password']
@@ -482,7 +452,6 @@ Profile default : pwaqa</p>
             newUser = selectedVariables['newUser']
             newpassword = selectedVariables['newpassword']
             digitalP = selectedVariables['digitalP']
-            CartPageURL = selectedVariables['CartPageURL']
             WrongUsername = selectedVariables['WrongUsername']
             WrongPassword = selectedVariables['WrongPassword']
             Username = selectedVariables['Username']
@@ -497,7 +466,6 @@ Profile default : pwaqa</p>
             GWPProductLink = selectedVariables['GWPProductLink']
             DigitalItem = selectedVariables['DigitalItem']
             MKPProductLink = selectedVariables['MKPProductLink']
-            LiverpoolProduction = selectedVariables['LiverpoolProduction']
             UsernameProduction = selectedVariables['UsernameProduction']
             PasswordProduction = selectedVariables['PasswordProduction']
             SLSearchTerm = selectedVariables['SLSearchTerm']
@@ -530,8 +498,6 @@ Profile default : pwaqa</p>
             gwpParentSLandGiftBTbothOOS = selectedVariables['gwpParentSLandGiftBTbothOOS']
             gwpParentBTgiftSL = selectedVariables['gwpParentBTgiftSL']
             gwpParentSLwithMultipleSLGifts = selectedVariables['gwpParentSLwithMultipleSLGifts']
-            prodURL = selectedVariables['prodURL']
-            URL = selectedVariables['URL']
             bt1gift2 = selectedVariables['bt1gift2']
             GID = selectedVariables['GID']
             Softline = selectedVariables['Softline']
@@ -558,11 +524,9 @@ Profile default : pwaqa</p>
             bundleItem = selectedVariables['bundleItem']
             GRuser = selectedVariables['GRuser']
             GRpassword = selectedVariables['GRpassword']
-            Url = selectedVariables['Url']
-            URLab = selectedVariables['URLab']
-            LiverpoolURL = selectedVariables['LiverpoolURL']
             CheckoutLink = selectedVariables['CheckoutLink']
             SL = selectedVariables['SL']
+            url = selectedVariables['url']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

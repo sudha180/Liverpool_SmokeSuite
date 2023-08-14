@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.url)
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.click(findTestObject('HomePage/Mis Compras_hp'), FailureHandling.STOP_ON_FAILURE)
 
