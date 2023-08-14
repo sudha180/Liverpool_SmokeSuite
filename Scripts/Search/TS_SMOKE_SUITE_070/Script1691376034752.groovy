@@ -16,10 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL)
+
+WebUI.maximizeWindow()
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
 
@@ -48,9 +51,9 @@ System.out.println(a)
 WebUI.delay(5)
 
 if (a == true) {
-	System.out.println('pagenation clicked page 2')
+    System.out.println('pagenation clicked page 2')
 } else {
-	KeywordUtil.markFailed('failed pagenation forward arrow not clicked')
+    KeywordUtil.markFailed('failed pagenation forward arrow not clicked')
 }
 
 WebUI.scrollToElement(findTestObject('PLPPage/BackArrow_Pagenation_PLP'), 0)

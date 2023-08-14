@@ -22,6 +22,8 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
+WebUI.maximizeWindow()
+
 WebUI.setText(findTestObject('HomePage/MainSearchbar_HP'), 'vaso')
 
 WebUI.click(findTestObject('HomePage/searchbar_searchbutton_HP'))

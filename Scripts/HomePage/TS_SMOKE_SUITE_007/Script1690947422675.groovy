@@ -21,6 +21,8 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('HomePage/Iniciar sesion'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('HomePage/EnterUsername_LP'), 0)

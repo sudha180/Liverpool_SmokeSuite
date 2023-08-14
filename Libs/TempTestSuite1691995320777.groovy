@@ -14,11 +14,11 @@ import internal.GlobalVariable as GlobalVariable
 
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
-suiteProperties.put('id', 'Test Suites/Search')
-suiteProperties.put('name', 'Search')
+suiteProperties.put('id', 'Test Suites/HomePage')
+suiteProperties.put('name', 'HomePage')
 suiteProperties.put('description', '')
 suiteProperties.put('rerunTestFailImmediately', 'false')
-suiteProperties.put('retryCount', '0')
+suiteProperties.put('retryCount', '2')
  
 
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.webui.contribution.WebUiDriverCleaner())
@@ -29,8 +29,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.t
 
 
 
-RunConfiguration.setExecutionSettingFile("D:\\backup\\Liverpool_SmokeSuite1\\Reports\\20230814_084656\\Search\\20230814_090920\\execution.properties")
+RunConfiguration.setExecutionSettingFile("D:\\backup\\Liverpool_SmokeSuite1\\Reports\\20230814_121159\\HomePage\\20230814_121200\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/Search', suiteProperties, new File("D:\\backup\\Liverpool_SmokeSuite1\\Reports\\20230814_084656\\Search\\20230814_090920\\testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/HomePage', suiteProperties, new File("D:\\backup\\Liverpool_SmokeSuite1\\Reports\\20230814_121159\\HomePage\\20230814_121200\\testCaseBinding"))

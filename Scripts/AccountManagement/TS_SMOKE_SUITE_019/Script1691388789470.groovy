@@ -34,7 +34,7 @@ WebUI.click(findTestObject('AccountManagement/MyAccountButton_Account'))
 
 WebUI.click(findTestObject('AccountManagement/DeliveryAddress_Account'))
 
-WebUI.click(findTestObject('Checkout/AddAddressButtonPopup_checkout'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SaveAddress_AccountManagment'), [:], FailureHandling.STOP_ON_FAILURE)
 

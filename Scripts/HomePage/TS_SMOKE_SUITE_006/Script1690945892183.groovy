@@ -21,6 +21,8 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
+WebUI.maximizeWindow()
+
 WebUI.verifyElementClickable(findTestObject('HomePage/Mesa de regalos_HP'))
 
 WebUI.click(findTestObject('HomePage/Mesa de regalos_HP'))

@@ -12,12 +12,12 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object URL
+    public static Object url
      
     /**
      * <p></p>
      */
-    public static Object newuser
+    public static Object SLProduct
      
     /**
      * <p></p>
@@ -28,6 +28,16 @@ public class GlobalVariable {
      * <p></p>
      */
     public static Object password
+     
+    /**
+     * <p></p>
+     */
+    public static Object URL
+     
+    /**
+     * <p></p>
+     */
+    public static Object newuser
      
     /**
      * <p>Profile default : pwaqa
@@ -99,11 +109,6 @@ Profile default : pwaqa</p>
      * <p></p>
      */
     public static Object MKPProduct
-     
-    /**
-     * <p></p>
-     */
-    public static Object SLProduct
      
     /**
      * <p></p>
@@ -430,11 +435,6 @@ Profile default : pwaqa</p>
      */
     public static Object SL
      
-    /**
-     * <p></p>
-     */
-    public static Object url
-     
 
     static {
         try {
@@ -442,10 +442,12 @@ Profile default : pwaqa</p>
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
             selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters())
     
-            URL = selectedVariables['URL']
-            newuser = selectedVariables['newuser']
+            url = selectedVariables['url']
+            SLProduct = selectedVariables['SLProduct']
             username = selectedVariables['username']
             password = selectedVariables['password']
+            URL = selectedVariables['URL']
+            newuser = selectedVariables['newuser']
             GIDcollection = selectedVariables['GIDcollection']
             username1 = selectedVariables['username1']
             password1 = selectedVariables['password1']
@@ -460,7 +462,6 @@ Profile default : pwaqa</p>
             BTSearchTerms = selectedVariables['BTSearchTerms']
             GWPProduct = selectedVariables['GWPProduct']
             MKPProduct = selectedVariables['MKPProduct']
-            SLProduct = selectedVariables['SLProduct']
             collectionItemLink = selectedVariables['collectionItemLink']
             BTItemsLink = selectedVariables['BTItemsLink']
             GWPProductLink = selectedVariables['GWPProductLink']
@@ -526,7 +527,6 @@ Profile default : pwaqa</p>
             GRpassword = selectedVariables['GRpassword']
             CheckoutLink = selectedVariables['CheckoutLink']
             SL = selectedVariables['SL']
-            url = selectedVariables['url']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

@@ -3,10 +3,10 @@
    <description></description>
    <name>default</name>
    <tag></tag>
-   <defaultProfile>true</defaultProfile>
+   <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://odtaqab.liverpool.com.mx/tienda/home'</initValue>
+      <initValue>'https://odtaqaa.liverpool.com.mx/tienda/home'</initValue>
       <name>URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

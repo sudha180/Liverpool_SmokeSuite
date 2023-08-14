@@ -21,6 +21,8 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
+WebUI.maximizeWindow()
+
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'set'], FailureHandling.STOP_ON_FAILURE)
 
 a = CustomKeywords.'a.GenerateRandomEmail.generateRandomEmail'()

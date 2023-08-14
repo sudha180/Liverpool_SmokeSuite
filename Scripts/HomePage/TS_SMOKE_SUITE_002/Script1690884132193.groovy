@@ -21,6 +21,8 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
+WebUI.maximizeWindow()
+
 WebUI.verifyElementPresent(findTestObject('HomePage/Logo_hp'), 0)
 
 WebUI.verifyElementPresent(findTestObject('HomePage/Departamentos'), 0)
