@@ -475,7 +475,7 @@ Profile default : pwaqa</p>
         try {
             def selectedVariables = TestCaseMain.getGlobalVariables("default")
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
-            selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters(), selectedVariables)
+            selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters())
     
             url = selectedVariables['url']
             newuser = selectedVariables['newuser']
