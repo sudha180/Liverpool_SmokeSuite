@@ -3,7 +3,7 @@
    <description></description>
    <name>smoke</name>
    <tag></tag>
-   <defaultProfile>false</defaultProfile>
+   <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://odtaqaa.liverpool.com.mx/tienda/home'</initValue>
@@ -13,5 +13,15 @@
       <description></description>
       <initValue>'vaso'</initValue>
       <name>SLProduct</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'hcheruvu29@digisprint.com'</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Test@12345'</initValue>
+      <name>password</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

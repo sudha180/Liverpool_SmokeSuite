@@ -19,7 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.url)
+WebUI.navigateToUrl(GlobalVariable.URL)
+
+WebUI.maximizeWindow()
 
 WebUI.verifyElementClickable(findTestObject('HomePage/Mesa de regalos_HP'))
 

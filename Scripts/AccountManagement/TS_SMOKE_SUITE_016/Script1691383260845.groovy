@@ -20,7 +20,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.LiverpoolURL)
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
@@ -28,6 +28,8 @@ WebUI.click(findTestObject('HomePage/Iniciar sesion'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.username, ('password') : GlobalVariable.password], 
     FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
 
 WebUI.mouseOver(findTestObject('HomePage/AfterLogin_Homepage'))
 
@@ -37,23 +39,13 @@ WebUI.click(findTestObject('AccountManagement/UpdatePeronalData_Account'))
 
 WebUI.verifyElementPresent(findTestObject('AccountManagement/updatePage_Account'), 0)
 
-String name = CustomKeywords.'customkeywords.myKeywords.randomString'()
+name = CustomKeywords.'customkeywords.myKeywords.randomString'()
 
-WebUI.click(findTestObject('AccountManagement/FirstNameProfile_Account'))
-//WebUI.clearText(findTestObject('AccountManagement/FirstNameProfile_Account'))
-fname = WebUI.getText(findTestObject('AccountManagement/FirstNameProfile_Account'))
-int n = fname.length()
-for(int i=0; i<=n; i++) {
-	WebUI.sendKeys(findTestObject('AccountManagement/FirstNameProfile_Account'), Keys.chord(Keys.BACK_SPACE))
-}
-
-WebUI.delay(5)
-
-WebUI.setText(findTestObject('AccountManagement/FirstNameProfile_Account'), name)
+WebUI.setText(findTestObject('AccountManagement/UpdatePeronalData_Account'), name)
 
 lastname = WebUI.getText(findTestObject('AccountManagement/LastName_Account'))
 
-accountname = (name + " " +lastname)
+accountname = (name + lastname)
 
 WebUI.click(findTestObject('AccountManagement/UpdateButton_Account'))
 
@@ -64,4 +56,6 @@ if (fnamelname == accountname) {
 } else {
     KeywordUtil.markFailed('Name is not updated !')
 }
+
+WebUI.closeBrowser()
 
