@@ -31,9 +31,9 @@ WebUI.click(findTestObject('AccountManagement/MyAccountButton_Account'))
 
 WebUI.click(findTestObject('AccountManagement/UpdatePeronalData_Account'))
 
-WebUI.delay(5)
-
 WebUI.verifyElementPresent(findTestObject('AccountManagement/firstName_update_accountManagement'), 0)
+
+WebUI.delay(5)
 
 Name = WebUI.getText(findTestObject('AccountManagement/firstName_update_accountManagement'), FailureHandling.STOP_ON_FAILURE)
 

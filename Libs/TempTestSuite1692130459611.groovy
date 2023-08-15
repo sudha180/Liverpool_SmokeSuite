@@ -18,7 +18,7 @@ suiteProperties.put('id', 'Test Suites/ShopingCart')
 suiteProperties.put('name', 'ShopingCart')
 suiteProperties.put('description', '')
 suiteProperties.put('rerunTestFailImmediately', 'false')
-suiteProperties.put('retryCount', '1')
+suiteProperties.put('retryCount', '0')
  
 
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.webui.contribution.WebUiDriverCleaner())
@@ -29,8 +29,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.t
 
 
 
-RunConfiguration.setExecutionSettingFile("D:\\backup\\Liverpool_SmokeSuite1\\Reports\\20230816_011938\\ShopingCart\\20230816_012017\\execution.properties")
+RunConfiguration.setExecutionSettingFile("D:\\backup\\Liverpool_SmokeSuite1\\Reports\\20230816_014259\\ShopingCart\\20230816_014419\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/ShopingCart', suiteProperties, new File("D:\\backup\\Liverpool_SmokeSuite1\\Reports\\20230816_011938\\ShopingCart\\20230816_012017\\testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/ShopingCart', suiteProperties, new File("D:\\backup\\Liverpool_SmokeSuite1\\Reports\\20230816_014259\\ShopingCart\\20230816_014419\\testCaseBinding"))

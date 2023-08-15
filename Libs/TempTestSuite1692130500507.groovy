@@ -14,8 +14,8 @@ import internal.GlobalVariable as GlobalVariable
 
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
-suiteProperties.put('id', 'Test Suites/ShopingCart')
-suiteProperties.put('name', 'ShopingCart')
+suiteProperties.put('id', 'Test Suites/AccountManagement')
+suiteProperties.put('name', 'AccountManagement')
 suiteProperties.put('description', '')
 suiteProperties.put('rerunTestFailImmediately', 'false')
 suiteProperties.put('retryCount', '0')
@@ -29,8 +29,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.t
 
 
 
-RunConfiguration.setExecutionSettingFile("D:\\backup\\Liverpool_SmokeSuite1\\Reports\\20230816_011938\\ShopingCart\\20230816_012057\\execution.properties")
+RunConfiguration.setExecutionSettingFile("D:\\backup\\Liverpool_SmokeSuite1\\Reports\\20230816_011943\\AccountManagement\\20230816_014500\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/ShopingCart', suiteProperties, new File("D:\\backup\\Liverpool_SmokeSuite1\\Reports\\20230816_011938\\ShopingCart\\20230816_012057\\testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/AccountManagement', suiteProperties, new File("D:\\backup\\Liverpool_SmokeSuite1\\Reports\\20230816_011943\\AccountManagement\\20230816_014500\\testCaseBinding"))

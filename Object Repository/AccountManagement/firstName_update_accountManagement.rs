@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class='mdc-ripple-upgraded'])[2]</value>
+         <value>(//div[@class='mdc-ripple-upgraded'])[2]//input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
