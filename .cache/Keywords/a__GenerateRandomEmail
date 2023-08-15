@@ -6,18 +6,15 @@
       "keywordMethods": [
         {
           "name": "generateRandomEmail",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "refreshBrowser",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "generateRandomText",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "clickElement",
@@ -35,8 +32,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "clickElementWithoutScroll",
@@ -54,8 +50,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "getHtmlTableRows",
@@ -86,23 +81,19 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "scrollWindow",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "scrollToTop",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "highlightElement1",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "highlightElement",
@@ -120,8 +111,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "verifyElementPresentKeyword",
@@ -139,13 +129,11 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "randomString",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "removeDollar",
@@ -163,11 +151,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
