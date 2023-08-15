@@ -25,7 +25,21 @@ WebUI.maximizeWindow()
 
 WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHandling.OPTIONAL)
 
-WebUI.verifyElementText(findTestObject('HomePage/header_Hola_text_HP'), 'Hola harish')
+WebUI.mouseOver(findTestObject('HomePage/AfterLogin_Homepage'))
+
+WebUI.click(findTestObject('AccountManagement/MyAccountButton_Account'))
+
+WebUI.click(findTestObject('AccountManagement/UpdatePeronalData_Account'))
+
+WebUI.delay(5)
+
+WebUI.verifyElementPresent(findTestObject('AccountManagement/firstName_update_accountManagement'), 0)
+
+Name = WebUI.getText(findTestObject('AccountManagement/firstName_update_accountManagement'), FailureHandling.STOP_ON_FAILURE)
+
+System.out.println(Name)
+
+WebUI.verifyElementText(findTestObject('HomePage/header_Hola_text_HP'), 'Hola ' + Name)
 
 WebUI.closeBrowser()
 

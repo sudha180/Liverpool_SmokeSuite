@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>EDD_pdp</name>
+   <name>firstName_update_accountManagement</name>
    <tag></tag>
-   <elementGuidId>aabca2fc-28e5-4b78-ba63-931957b3f3de</elementGuidId>
+   <elementGuidId>dfbf785a-1715-463e-a1ce-73fb9df4f6c3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='GeoBodyText false']</value>
+         <value>(//div[@class='mdc-ripple-upgraded'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

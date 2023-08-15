@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\DELL\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Browse and Shop\\TS_SMOKE_SUITE_058\\20230814_122912\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\DELL\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Search\\TS_SMOKE_SUITE_060\\20230814_205135\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Browse and Shop/TS_SMOKE_SUITE_058', new TestCaseBinding('Test Cases/Browse and Shop/TS_SMOKE_SUITE_058',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Search/TS_SMOKE_SUITE_060', new TestCaseBinding('Test Cases/Search/TS_SMOKE_SUITE_060',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

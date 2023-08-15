@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class='a-header__topLink']/..</value>
+         <value>//div[@class='o-col col-lg-auto d-none d-lg-flex text-center order-lg-4 sessionMinWidth']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

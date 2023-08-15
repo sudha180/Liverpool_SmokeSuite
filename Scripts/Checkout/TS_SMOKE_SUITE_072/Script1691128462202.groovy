@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL)
-
 WebUI.maximizeWindow()
+
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.click(findTestObject('HomePage/Iniciar sesion'))
 

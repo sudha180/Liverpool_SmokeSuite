@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>EDD_pdp</name>
+   <description>the title of finding &quot;Find Liverpool, shopping center or duty free&quot;</description>
+   <name>find_store_title_SLP</name>
    <tag></tag>
-   <elementGuidId>aabca2fc-28e5-4b78-ba63-931957b3f3de</elementGuidId>
+   <elementGuidId>308b0260-df99-418d-8e0e-c73d4916bf63</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='GeoBodyText false']</value>
+         <value>//h1[@class='a-storeLocator-aside__title']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
