@@ -37,7 +37,7 @@ WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
 WebUI.verifyElementPresent(findTestObject('HomePage/LoginPage_hp'), 0)
 
-WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.username, ('password') : GlobalVariable.password], 
+WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.AMUsername, ('password') : GlobalVariable.AMpassword], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('HomePage/AfterLogin_Homepage'), 0)
