@@ -22,12 +22,12 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object username
+    public static Object AMUsername
      
     /**
      * <p></p>
      */
-    public static Object password
+    public static Object AMpassword
      
     /**
      * <p></p>
@@ -38,6 +38,16 @@ public class GlobalVariable {
      * <p></p>
      */
     public static Object newuser
+     
+    /**
+     * <p></p>
+     */
+    public static Object username
+     
+    /**
+     * <p></p>
+     */
+    public static Object password
      
     /**
      * <p>Profile default : pwaqa
@@ -449,10 +459,12 @@ Profile default : pwaqa</p>
     
             url = selectedVariables['url']
             SLProduct = selectedVariables['SLProduct']
-            username = selectedVariables['username']
-            password = selectedVariables['password']
+            AMUsername = selectedVariables['AMUsername']
+            AMpassword = selectedVariables['AMpassword']
             URL = selectedVariables['URL']
             newuser = selectedVariables['newuser']
+            username = selectedVariables['username']
+            password = selectedVariables['password']
             GIDcollection = selectedVariables['GIDcollection']
             username1 = selectedVariables['username1']
             password1 = selectedVariables['password1']

@@ -25,7 +25,7 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('HomePage/Iniciar sesion'))
 
-WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.username, ('password') : GlobalVariable.password], 
+WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.AMUsername, ('password') : GlobalVariable.AMpassword], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('HomePage/AfterLogin_Homepage'))
@@ -36,11 +36,11 @@ WebUI.click(findTestObject('AccountManagement/ChangePassword_Account'))
 
 WebUI.click(findTestObject('HomePage/username'))
 
-WebUI.setText(findTestObject('HomePage/username'), GlobalVariable.username)
+WebUI.setText(findTestObject('HomePage/username'), GlobalVariable.AMUsername)
 
 WebUI.click(findTestObject('HomePage/password'))
 
-WebUI.setText(findTestObject('HomePage/password'), GlobalVariable.password)
+WebUI.setText(findTestObject('HomePage/password'), GlobalVariable.AMpassword)
 
 WebUI.click(findTestObject('HomePage/action'))
 

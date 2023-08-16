@@ -26,7 +26,7 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('HomePage/Iniciar sesion'))
 
-WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.username, ('password') : GlobalVariable.password], 
+WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.AMUsername, ('password') : GlobalVariable.AMpassword], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('HomePage/AfterLogin_Homepage'))

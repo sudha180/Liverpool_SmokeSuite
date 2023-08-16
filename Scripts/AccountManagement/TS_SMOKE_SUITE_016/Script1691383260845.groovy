@@ -26,7 +26,7 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('HomePage/Iniciar sesion'))
 
-WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.username, ('password') : GlobalVariable.password], 
+WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.AMUsername, ('password') : GlobalVariable.AMpassword], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
@@ -39,17 +39,29 @@ WebUI.click(findTestObject('AccountManagement/UpdatePeronalData_Account'))
 
 WebUI.verifyElementPresent(findTestObject('AccountManagement/updatePage_Account'), 0)
 
+//lastname = WebUI.getText(findTestObject('AccountManagement/LastName_Account'))
+
 name = CustomKeywords.'customkeywords.myKeywords.randomString'()
 
-WebUI.setText(findTestObject('AccountManagement/UpdatePeronalData_Account'), name)
+WebUI.clearText(findTestObject('AccountManagement/FirstNameProfile_Account'), FailureHandling.STOP_ON_FAILURE)
 
-lastname = WebUI.getText(findTestObject('AccountManagement/LastName_Account'))
+WebUI.sendKeys(findTestObject('AccountManagement/FirstNameProfile_Account'), Keys.chord(Keys.CONTROL, 'a'))
 
-accountname = (name + lastname)
+WebUI.sendKeys(findTestObject('AccountManagement/FirstNameProfile_Account'), name)
+
+def lastname = Windows.getAttribute(findTestObject('AccountManagement/LastName_Account'), 'value')
+
+println(lastname)
+
+accountname = ((name + ' ') + lastname)
+
+println(accountname)
 
 WebUI.click(findTestObject('AccountManagement/UpdateButton_Account'))
 
 fnamelname = WebUI.getText(findTestObject('AccountManagement/PersonalDataName_Account'))
+
+println(fnamelname)
 
 if (fnamelname == accountname) {
     println('Checked')
@@ -57,5 +69,5 @@ if (fnamelname == accountname) {
     KeywordUtil.markFailed('Name is not updated !')
 }
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 
