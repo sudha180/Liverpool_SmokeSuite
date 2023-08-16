@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='o-loggedUserCardInfo d-block']//label[3]//a[@class='a-box__actionAddress dropdown-toggle']//i</value>
+         <value>//div[@class='o-loggedUserCardInfo d-block']//label[3]//a[@class='a-box__actionAddress dropdown-toggle']</value>
       </entry>
       <entry>
          <key>BASIC</key>
