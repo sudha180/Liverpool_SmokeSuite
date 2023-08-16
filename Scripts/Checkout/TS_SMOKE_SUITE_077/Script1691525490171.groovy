@@ -21,8 +21,6 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
-not_run: WebUI.navigateToUrl('https://www.liverpool.com.mx/tienda/home')
-
 WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('HomePage/Iniciar sesion'))

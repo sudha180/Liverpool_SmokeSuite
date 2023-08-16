@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class='a-btn a-btn--onePageCheckout--deliveryAddress d-inline breakdown-expenses__coupons_button']</value>
+         <value>//div[@id='coupons-indicator-desktop']//div[@class='text-indicator-link']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -30,6 +30,103 @@ public class GlobalVariable {
     public static Object password
      
     /**
+     * <p>Profile smoke : digital product 
+Profile default : digital product </p>
+     */
+    public static Object digitalP
+     
+    /**
+     * <p></p>
+     */
+    public static Object SLSearchTerm
+     
+    /**
+     * <p></p>
+     */
+    public static Object minimumPurchaseProdut
+     
+    /**
+     * <p></p>
+     */
+    public static Object PreorderItem
+     
+    /**
+     * <p></p>
+     */
+    public static Object eventQATest
+     
+    /**
+     * <p>Profile smoke : telefono-fijo&#47;1007253555
+Profile default : telefono-fijo&#47;1007253555</p>
+     */
+    public static Object PreOrderProduct
+     
+    /**
+     * <p></p>
+     */
+    public static Object exclusiveProductId
+     
+    /**
+     * <p></p>
+     */
+    public static Object search2price
+     
+    /**
+     * <p></p>
+     */
+    public static Object MotherName
+     
+    /**
+     * <p></p>
+     */
+    public static Object PostalCode
+     
+    /**
+     * <p></p>
+     */
+    public static Object CityAddAddress
+     
+    /**
+     * <p></p>
+     */
+    public static Object StreetAddAddress
+     
+    /**
+     * <p></p>
+     */
+    public static Object NoExtAddAddress
+     
+    /**
+     * <p></p>
+     */
+    public static Object CellPhoneAddAddress
+     
+    /**
+     * <p></p>
+     */
+    public static Object LADAaddAddress
+     
+    /**
+     * <p></p>
+     */
+    public static Object phoneAddAddress
+     
+    /**
+     * <p></p>
+     */
+    public static Object ShortName
+     
+    /**
+     * <p></p>
+     */
+    public static Object EventNumber
+     
+    /**
+     * <p></p>
+     */
+    public static Object CartPageURL
+     
+    /**
      * <p></p>
      */
     public static Object URL
@@ -64,11 +161,6 @@ Profile default : pwaqa</p>
      * <p></p>
      */
     public static Object newpassword
-     
-    /**
-     * <p>Profile default : digital product </p>
-     */
-    public static Object digitalP
      
     /**
      * <p></p>
@@ -148,27 +240,7 @@ Profile default : pwaqa</p>
     /**
      * <p></p>
      */
-    public static Object SLSearchTerm
-     
-    /**
-     * <p></p>
-     */
     public static Object SL_Product1
-     
-    /**
-     * <p></p>
-     */
-    public static Object minimumPurchaseProdut
-     
-    /**
-     * <p></p>
-     */
-    public static Object PreorderItem
-     
-    /**
-     * <p></p>
-     */
-    public static Object eventQATest
      
     /**
      * <p>Profile default : Pantalla Sony LCD smart TV de 85 pulgadas Dolby Atmos&#47;HDR Dolby Vision KD-85X85K con Google TV</p>
@@ -179,16 +251,6 @@ Profile default : pwaqa</p>
      * <p></p>
      */
     public static Object SLProduct2Id
-     
-    /**
-     * <p>Profile default : telefono-fijo&#47;1007253555</p>
-     */
-    public static Object PreOrderProduct
-     
-    /**
-     * <p></p>
-     */
-    public static Object exclusiveProductId
      
     /**
      * <p></p>
@@ -348,61 +410,6 @@ Profile default : pwaqa</p>
     /**
      * <p></p>
      */
-    public static Object search2price
-     
-    /**
-     * <p></p>
-     */
-    public static Object MotherName
-     
-    /**
-     * <p></p>
-     */
-    public static Object PostalCode
-     
-    /**
-     * <p></p>
-     */
-    public static Object CityAddAddress
-     
-    /**
-     * <p></p>
-     */
-    public static Object StreetAddAddress
-     
-    /**
-     * <p></p>
-     */
-    public static Object NoExtAddAddress
-     
-    /**
-     * <p></p>
-     */
-    public static Object CellPhoneAddAddress
-     
-    /**
-     * <p></p>
-     */
-    public static Object LADAaddAddress
-     
-    /**
-     * <p></p>
-     */
-    public static Object phoneAddAddress
-     
-    /**
-     * <p></p>
-     */
-    public static Object ShortName
-     
-    /**
-     * <p></p>
-     */
-    public static Object EventNumber
-     
-    /**
-     * <p></p>
-     */
     public static Object BigTicketWord
      
     /**
@@ -446,6 +453,25 @@ Profile default : pwaqa</p>
             SLProduct = selectedVariables['SLProduct']
             username = selectedVariables['username']
             password = selectedVariables['password']
+            digitalP = selectedVariables['digitalP']
+            SLSearchTerm = selectedVariables['SLSearchTerm']
+            minimumPurchaseProdut = selectedVariables['minimumPurchaseProdut']
+            PreorderItem = selectedVariables['PreorderItem']
+            eventQATest = selectedVariables['eventQATest']
+            PreOrderProduct = selectedVariables['PreOrderProduct']
+            exclusiveProductId = selectedVariables['exclusiveProductId']
+            search2price = selectedVariables['search2price']
+            MotherName = selectedVariables['MotherName']
+            PostalCode = selectedVariables['PostalCode']
+            CityAddAddress = selectedVariables['CityAddAddress']
+            StreetAddAddress = selectedVariables['StreetAddAddress']
+            NoExtAddAddress = selectedVariables['NoExtAddAddress']
+            CellPhoneAddAddress = selectedVariables['CellPhoneAddAddress']
+            LADAaddAddress = selectedVariables['LADAaddAddress']
+            phoneAddAddress = selectedVariables['phoneAddAddress']
+            ShortName = selectedVariables['ShortName']
+            EventNumber = selectedVariables['EventNumber']
+            CartPageURL = selectedVariables['CartPageURL']
             URL = selectedVariables['URL']
             newuser = selectedVariables['newuser']
             GIDcollection = selectedVariables['GIDcollection']
@@ -453,7 +479,6 @@ Profile default : pwaqa</p>
             password1 = selectedVariables['password1']
             newUser = selectedVariables['newUser']
             newpassword = selectedVariables['newpassword']
-            digitalP = selectedVariables['digitalP']
             WrongUsername = selectedVariables['WrongUsername']
             WrongPassword = selectedVariables['WrongPassword']
             Username = selectedVariables['Username']
@@ -469,15 +494,9 @@ Profile default : pwaqa</p>
             MKPProductLink = selectedVariables['MKPProductLink']
             UsernameProduction = selectedVariables['UsernameProduction']
             PasswordProduction = selectedVariables['PasswordProduction']
-            SLSearchTerm = selectedVariables['SLSearchTerm']
             SL_Product1 = selectedVariables['SL_Product1']
-            minimumPurchaseProdut = selectedVariables['minimumPurchaseProdut']
-            PreorderItem = selectedVariables['PreorderItem']
-            eventQATest = selectedVariables['eventQATest']
             BigTicket = selectedVariables['BigTicket']
             SLProduct2Id = selectedVariables['SLProduct2Id']
-            PreOrderProduct = selectedVariables['PreOrderProduct']
-            exclusiveProductId = selectedVariables['exclusiveProductId']
             gwpSearchWord = selectedVariables['gwpSearchWord']
             gwpGiftOOS = selectedVariables['gwpGiftOOS']
             gwpSLwithSingleGift = selectedVariables['gwpSLwithSingleGift']
@@ -509,17 +528,6 @@ Profile default : pwaqa</p>
             BLpBLgift = selectedVariables['BLpBLgift']
             BLpSLgift2 = selectedVariables['BLpSLgift2']
             SLwithVarient = selectedVariables['SLwithVarient']
-            search2price = selectedVariables['search2price']
-            MotherName = selectedVariables['MotherName']
-            PostalCode = selectedVariables['PostalCode']
-            CityAddAddress = selectedVariables['CityAddAddress']
-            StreetAddAddress = selectedVariables['StreetAddAddress']
-            NoExtAddAddress = selectedVariables['NoExtAddAddress']
-            CellPhoneAddAddress = selectedVariables['CellPhoneAddAddress']
-            LADAaddAddress = selectedVariables['LADAaddAddress']
-            phoneAddAddress = selectedVariables['phoneAddAddress']
-            ShortName = selectedVariables['ShortName']
-            EventNumber = selectedVariables['EventNumber']
             BigTicketWord = selectedVariables['BigTicketWord']
             SoftlineWord = selectedVariables['SoftlineWord']
             bundleItem = selectedVariables['bundleItem']
