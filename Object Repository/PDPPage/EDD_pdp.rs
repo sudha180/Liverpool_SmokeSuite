@@ -6,11 +6,11 @@
    <elementGuidId>aabca2fc-28e5-4b78-ba63-931957b3f3de</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='GeoBodyText']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@class='GeoBodyText false']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

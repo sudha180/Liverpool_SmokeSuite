@@ -42,3 +42,5 @@ WebUI.click(findTestObject('AccountManagement/SetDefaultAddressClickNCollection'
 
 WebUI.verifyElementPresent(findTestObject('AccountManagement/VerifyDefaultPresent_Account'), 0)
 
+WebUI.closeBrowser()
+

@@ -51,7 +51,13 @@ WebUI.click(findTestObject('OPCPage/EditAddress_Checkout'))
 
 WebUI.setText(findTestObject('OPCPage/shortName_addAddress_opc'), GlobalVariable.ShortName)
 
-WebUI.click(findTestObject('OPCPage/ContinueButtonAddAddress_Checkout'))
+WebUI.delay(5)
+
+WebUI.enhancedClick(findTestObject('OPCPage/ContinueButtonAddAddress_Checkout'))
+
+WebUI.enhancedClick(findTestObject('OPCPage/ContinueButtonAddAddress_Checkout'), FailureHandling.OPTIONAL)
+
+WebUI.enhancedClick(findTestObject('OPCPage/ContinueButtonAddAddress_Checkout'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('HomePage/Logo_hp'))
 

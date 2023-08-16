@@ -6,11 +6,11 @@
    <elementGuidId>887af507-ce33-462b-b886-2ccc3a692bf8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='variants.sellernames-Liverpool']/..</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//input[@id='variants.sellernames-Liverpool']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

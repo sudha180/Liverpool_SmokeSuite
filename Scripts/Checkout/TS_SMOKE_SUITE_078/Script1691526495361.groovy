@@ -30,6 +30,8 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLProduct], 
     FailureHandling.STOP_ON_FAILURE)
 
+WebUI.click(findTestObject('PLPPage/product2_cardPrice_PLP'))
+
 WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
 WebUI.click(findTestObject('HomePage/bag_header_HP'))
@@ -40,7 +42,7 @@ WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'))
 
 WebUI.click(findTestObject('OPCPage/paymentMethod_button3_OPC'))
 
-WebUI.click(findTestObject('OPCPage/cardContinue_checkout_popUP'))
+WebUI.click(findTestObject('OPCPage/Continue_payment_3rdmethod_OPC'))
 
 WebUI.click(findTestObject('OPCPage/Final_comparar_OPC'))
 

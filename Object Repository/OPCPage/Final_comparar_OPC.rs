@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='opc_sticky_button']//button[@class='a-btn a-btn--primary']</value>
+         <value>//button[contains(text(),'Finalizar compra')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

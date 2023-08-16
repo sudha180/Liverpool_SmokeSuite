@@ -32,6 +32,14 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.delay(5)
 
+WebUI.scrollToElement(findTestObject('PLPPage/pagenation_1_PLP'), 0)
+
+WebUI.scrollToPosition(450, 0)
+
+WebUI.click(findTestObject('PLPPage/pagenation_2_PLP'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
 a1 = WebUI.getUrl()
 
 System.out.println(a1)
@@ -39,16 +47,6 @@ System.out.println(a1)
 boolean a = a1.contains('page-2')
 
 System.out.println(a)
-
-WebUI.acceptAlert()
-
-WebUI.scrollToElement(findTestObject('PLPPage/pagenation_1_PLP'), 0)
-
-WebUI.scrollToPosition(450, 0)
-
-WebUI.delay(10)
-
-WebUI.click(findTestObject('PLPPage/pagenation_2_PLP'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)
 

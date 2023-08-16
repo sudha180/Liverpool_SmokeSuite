@@ -32,15 +32,21 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), 0)
 
-boolean a = WebUI.getText(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), FailureHandling.STOP_ON_FAILURE)
+a = WebUI.getText(findTestObject('PLPPage/Facet_Seller_liverpool_title_PLP'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('PLPPage/facetes/Facet_Seller_liverpool_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-boolean b = WebUI.getText(findTestObject('PLPPage/facetes/selectedfacet1_PLP'))
+b = WebUI.getText(findTestObject('PLPPage/facetes/selectedfacet1_PLP'))
 
-if (a == b) {
+System.out.println(a)
+
+System.out.println(b)
+
+if (a.contains(b)) {
     System.out.println('facet selected')
 } else {
+    WebUI.acceptAlert()
+
     KeywordUtil.markFailed('failed facet not selected')
 }
 
