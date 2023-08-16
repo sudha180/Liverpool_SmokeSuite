@@ -42,7 +42,7 @@ WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'))
 
 WebUI.click(findTestObject('OPCPage/paymentMethod_button3_OPC'))
 
-WebUI.click(findTestObject('OPCPage/cardContinue_checkout_popUP'))
+WebUI.click(findTestObject('OPCPage/Continue_payment_3rdmethod_OPC'))
 
 WebUI.click(findTestObject('OPCPage/Final_comparar_OPC'))
 

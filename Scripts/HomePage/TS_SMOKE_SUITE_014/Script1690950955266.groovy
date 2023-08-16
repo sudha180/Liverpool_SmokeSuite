@@ -35,7 +35,15 @@ WebUI.verifyElementPresent(findTestObject('AccountManagement/firstName_update_ac
 
 WebUI.delay(5)
 
-Name = WebUI.getText(findTestObject('AccountManagement/firstName_update_accountManagement'), FailureHandling.STOP_ON_FAILURE)
+Name = 'harish'
+
+WebUI.click(findTestObject('AccountManagement/firstName_update_accountManagement'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.clearText(findTestObject('AccountManagement/firstName_update_accountManagement'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.sendKeys(findTestObject('AccountManagement/firstName_update_accountManagement'), Keys.chord(Keys.CONTROL, 'a'))
+
+WebUI.sendKeys(findTestObject('AccountManagement/firstName_update_accountManagement'), Name)
 
 System.out.println(Name)
 

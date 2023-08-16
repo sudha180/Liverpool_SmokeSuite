@@ -25,7 +25,7 @@ WebUI.click(findTestObject('OPCPage/Payment_Method_Card_OPC'), FailureHandling.O
 'to set card as default card\r\n'
 WebUI.click(findTestObject('OPCPage/addnewcard_Popup_OPC'), FailureHandling.OPTIONAL)
 
-String cardnumber = RandomStringUtils.randomNumeric(16)
+String cardnumber = '4111111' + RandomStringUtils.randomNumeric(9)
 
 String cardname = RandomStringUtils.randomAlphabetic(8)
 
@@ -35,7 +35,7 @@ WebUI.setText(findTestObject('OPCPage/EnterCardAlias_OPC'), cardname)
 
 WebUI.setText(findTestObject('OPCPage/enterCardName_OPC'), 'vedant')
 
-WebUI.setText(findTestObject('OPCPage/enterCardExpire_OPC'), '12/24')
+WebUI.setText(findTestObject('OPCPage/newCard_expireDATE_POPup_Addcard_OPC'), '12/24')
 
 WebUI.setText(findTestObject('OPCPage/enterCardCVV_OPC'), '123')
 
@@ -50,4 +50,6 @@ WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'))
 WebUI.click(findTestObject('OPCPage/paymentMethod_button1_OPC'))
 
 WebUI.verifyTextPresent(cardname, false)
+
+WebUI.callTestCase(findTestCase('CommonMethods/close any pop up'), [:], FailureHandling.OPTIONAL)
 
