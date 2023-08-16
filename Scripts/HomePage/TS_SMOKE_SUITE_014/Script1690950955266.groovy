@@ -43,7 +43,7 @@ WebUI.clearText(findTestObject('AccountManagement/firstName_update_accountManage
 
 WebUI.sendKeys(findTestObject('AccountManagement/firstName_update_accountManagement'), Keys.chord(Keys.CONTROL, 'a'))
 
-WebUI.sendKeys(findTestObject('AccountManagement/firstName_update_accountManagement'), Name)
+WebUI.setText(findTestObject('AccountManagement/firstName_update_accountManagement'), Name)
 
 System.out.println(Name)
 
