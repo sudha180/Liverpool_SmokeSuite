@@ -50,11 +50,6 @@
       <name>eventQATest</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>telefono-fijo/1007253555</description>
-      <initValue>'1007253555'</initValue>
-      <name>PreOrderProduct</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
       <description></description>
       <initValue>'1024316790'</initValue>
       <name>exclusiveProductId</name>
