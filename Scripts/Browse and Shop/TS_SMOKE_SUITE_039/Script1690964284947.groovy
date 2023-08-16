@@ -30,6 +30,3 @@ WebUI.click(findTestObject('HomePage/L1_Category1_HP'), FailureHandling.STOP_ON_
 WebUI.verifyElementClickable(findTestObject('CLPPage/breadCrumb_clp'))
 
 WebUI.closeBrowser()
-
-
-WebUI.closeBrowser()
