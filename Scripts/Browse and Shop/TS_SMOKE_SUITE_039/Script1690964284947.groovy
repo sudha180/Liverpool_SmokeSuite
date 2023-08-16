@@ -31,3 +31,5 @@ WebUI.verifyElementClickable(findTestObject('CLPPage/breadCrumb_clp'))
 
 WebUI.closeBrowser()
 
+
+WebUI.closeBrowser()
