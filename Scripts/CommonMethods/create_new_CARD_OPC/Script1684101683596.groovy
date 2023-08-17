@@ -27,6 +27,8 @@ WebUI.click(findTestObject('OPCPage/addnewcard_Popup_OPC'), FailureHandling.OPTI
 
 String cardnumber = '4111111' + RandomStringUtils.randomNumeric(9)
 
+System.out.println(cardnumber)
+
 String cardname = RandomStringUtils.randomAlphabetic(8)
 
 WebUI.setText(findTestObject('OPCPage/newCardNumber_OPC'), cardnumber)
@@ -38,6 +40,8 @@ WebUI.setText(findTestObject('OPCPage/enterCardName_OPC'), 'vedant')
 WebUI.setText(findTestObject('OPCPage/newCard_expireDATE_POPup_Addcard_OPC'), '12/24')
 
 WebUI.setText(findTestObject('OPCPage/enterCardCVV_OPC'), '123')
+
+WebUI.click(findTestObject('OPCPage/selectAddress_Card_create_popup'))
 
 WebUI.click(findTestObject('OPCPage/AddCard_continue_POPup_OPC'))
 
